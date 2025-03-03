@@ -42,3 +42,4 @@ tester = Tester(env = env, player1 = player1, player2 = player2)
 games_num = 300
 black_win, white_win = tester.test(games_num)
 print('Black:', black_win, 'White:', white_win, '-->', black_win / (black_win + white_win) * 100,'%')
+print('checking push and pull :)')
