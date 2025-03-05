@@ -8,12 +8,8 @@ import torch.nn as nn
 from DQN import DQN
 from State import State
 from Environment import Environment
+from Constants import *
 
-epsilon_start = 1
-epsilon_final = 0.01
-epsiln_decay = 5000
-
-gamma = 0.99 
 MSELoss = nn.MSELoss()
 
 class DQN_Agent:
@@ -21,20 +17,17 @@ class DQN_Agent:
         self.DQN = DQN()
         if parameters_path:
             self.DQN.load_params(parameters_path)
-        self.train(train)
-        # self.train = train
+        self.train = train
         self.player = player
         self.env = env
     
-    def train(self, train):
-        self.train = train
-        if train:
+    def train_mode(self):
+        if self.train:
             self.DQN.train()
         else:
             self.DQN.eval()
     
     def get_action(self, state : State, epoch = 0, events = None, train = False):
-        # pygame.time.delay(1500)
         epsilon = self.epsilon_greedy(epoch)
         rnd = random.random()
         actions = self.env.get_all_actions(state)
@@ -46,7 +39,6 @@ class DQN_Agent:
         actions_np = np.array(actions)
         actions_tensor = torch.from_numpy(actions_np).reshape(-1, 4).to(torch.float32)
         expand_state_tensor = state_tensor.unsqueeze(0).repeat((len(actions_tensor), 1)).to(torch.float32)
-        # state_action = torch.cat((expand_state_tensor, actions_tensor), dim = 1)
         with torch.no_grad():
             Q_values = self.DQN(expand_state_tensor, actions_tensor)
         max_index = torch.argmax(Q_values)
@@ -61,7 +53,7 @@ class DQN_Agent:
                 actions.append(self.get_action(state = State.to_state(state, self.player), train = True))
         return torch.tensor(actions).view(-1, 4).to(torch.float32)
 
-    def epsilon_greedy(self, epoch, start = epsilon_start, final = epsilon_final, decay = epsiln_decay):
+    def epsilon_greedy(self, epoch, start = epsilon_start, final = epsilon_final, decay = epsilon_decay):
         res = final + (start - final) * math.exp(-1 * epoch/decay)
         return res
 

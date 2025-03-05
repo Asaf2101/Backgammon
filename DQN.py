@@ -3,12 +3,8 @@ import random
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from Constants import *
 
-input_size = 34
-layer1 = 128
-layer2 = 64
-output_size = 1
-gamma = 0.99
 MSELoss = nn.MSELoss()
 
 class DQN(nn.Module):

@@ -39,7 +39,7 @@ class State:
         dice = np.array(self.dice)
         checkers_eaten = np.array(self.checkers_eaten)
         checkers_out = np.array(self.checkers_out)
-        tensor = torch.tensor(np.concatenate([board, dice, checkers_eaten, checkers_out]))
+        tensor = torch.tensor(np.concatenate([board, dice, checkers_eaten, checkers_out])).to(torch.float64)
         return tensor
 
     [staticmethod]
