@@ -1,0 +1,99 @@
+epoch: 1, wins per 10: 1, avg checkers diff: 0.0
+epoch: 2, wins per 10: 0, avg checkers diff: -0.3
+epoch: 3, wins per 10: 0, avg checkers diff: -1.5
+epoch: 4, wins per 10: 0, avg checkers diff: -0.8
+epoch: 5, wins per 10: 0, avg checkers diff: -0.7
+epoch: 6, wins per 10: 0, avg checkers diff: -0.3
+epoch: 7, wins per 10: 1, avg checkers diff: 1.5
+epoch: 8, wins per 10: 0, avg checkers diff: -1.5
+epoch: 9, wins per 10: 0, avg checkers diff: -1.5
+epoch: 10, wins per 10: 1, avg checkers diff: 1.3
+epoch: 11, wins per 10: 0, avg checkers diff: -1.1
+epoch: 12, wins per 10: 0, avg checkers diff: -0.2
+epoch: 13, wins per 10: 1, avg checkers diff: 1.5
+epoch: 14, wins per 10: 1, avg checkers diff: 1.5
+epoch: 15, wins per 10: 0, avg checkers diff: -0.8
+epoch: 16, wins per 10: 1, avg checkers diff: 1.5
+epoch: 17, wins per 10: 0, avg checkers diff: -0.3
+epoch: 18, wins per 10: 0, avg checkers diff: -1.5
+epoch: 19, wins per 10: 1, avg checkers diff: 1.5
+epoch: 20, wins per 10: 1, avg checkers diff: 1.5
+epoch: 21, wins per 10: 1, avg checkers diff: 1.3
+epoch: 22, wins per 10: 0, avg checkers diff: -0.5
+epoch: 23, wins per 10: 0, avg checkers diff: -0.8
+epoch: 24, wins per 10: 0, avg checkers diff: -1.1
+epoch: 25, wins per 10: 0, avg checkers diff: -0.2
+epoch: 26, wins per 10: 1, avg checkers diff: 0.5
+epoch: 27, wins per 10: 1, avg checkers diff: 1.5
+epoch: 28, wins per 10: 0, avg checkers diff: -1.0
+epoch: 29, wins per 10: 1, avg checkers diff: 1.2
+epoch: 30, wins per 10: 1, avg checkers diff: 1.5
+epoch: 31, wins per 10: 1, avg checkers diff: 0.7
+epoch: 32, wins per 10: 0, avg checkers diff: -0.3
+epoch: 33, wins per 10: 0, avg checkers diff: -1.5
+epoch: 34, wins per 10: 1, avg checkers diff: 0.9
+epoch: 35, wins per 10: 1, avg checkers diff: 1.5
+epoch: 36, wins per 10: 0, avg checkers diff: -1.5
+epoch: 37, wins per 10: 1, avg checkers diff: 0.4
+epoch: 38, wins per 10: 1, avg checkers diff: 0.4
+epoch: 39, wins per 10: 0, avg checkers diff: -1.4
+epoch: 40, wins per 10: 0, avg checkers diff: -0.6
+epoch: 41, wins per 10: 1, avg checkers diff: 1.5
+epoch: 42, wins per 10: 0, avg checkers diff: -0.4
+epoch: 43, wins per 10: 1, avg checkers diff: 1.5
+epoch: 44, wins per 10: 1, avg checkers diff: 1.2
+epoch: 45, wins per 10: 0, avg checkers diff: -1.5
+epoch: 46, wins per 10: 1, avg checkers diff: 1.5
+epoch: 47, wins per 10: 0, avg checkers diff: -0.5
+epoch: 48, wins per 10: 0, avg checkers diff: -0.6
+epoch: 49, wins per 10: 1, avg checkers diff: 1.5
+epoch: 50, wins per 10: 1, avg checkers diff: 0.2
+epoch: 51, wins per 10: 0, avg checkers diff: -1.5
+epoch: 52, wins per 10: 1, avg checkers diff: 1.4
+epoch: 53, wins per 10: 1, avg checkers diff: 1.5
+epoch: 54, wins per 10: 1, avg checkers diff: 1.2
+epoch: 55, wins per 10: 1, avg checkers diff: 1.5
+epoch: 56, wins per 10: 1, avg checkers diff: 1.5
+epoch: 57, wins per 10: 1, avg checkers diff: 0.4
+epoch: 58, wins per 10: 1, avg checkers diff: 1.5
+epoch: 59, wins per 10: 0, avg checkers diff: -1.0
+epoch: 60, wins per 10: 1, avg checkers diff: 1.5
+epoch: 61, wins per 10: 1, avg checkers diff: 1.3
+epoch: 62, wins per 10: 1, avg checkers diff: 1.5
+epoch: 63, wins per 10: 1, avg checkers diff: 1.5
+epoch: 64, wins per 10: 0, avg checkers diff: -1.5
+epoch: 65, wins per 10: 1, avg checkers diff: 1.5
+epoch: 66, wins per 10: 1, avg checkers diff: 1.5
+epoch: 67, wins per 10: 0, avg checkers diff: -0.1
+epoch: 68, wins per 10: 1, avg checkers diff: 0.8
+epoch: 69, wins per 10: 1, avg checkers diff: 0.8
+epoch: 70, wins per 10: 0, avg checkers diff: -1.5
+epoch: 71, wins per 10: 1, avg checkers diff: 0.8
+epoch: 72, wins per 10: 1, avg checkers diff: 0.6
+epoch: 73, wins per 10: 1, avg checkers diff: 0.5
+epoch: 74, wins per 10: 0, avg checkers diff: -1.5
+epoch: 75, wins per 10: 1, avg checkers diff: 1.5
+epoch: 76, wins per 10: 1, avg checkers diff: 1.3
+epoch: 77, wins per 10: 1, avg checkers diff: 0.9
+epoch: 78, wins per 10: 1, avg checkers diff: 0.6
+epoch: 79, wins per 10: 1, avg checkers diff: 1.5
+epoch: 80, wins per 10: 1, avg checkers diff: 1.5
+epoch: 81, wins per 10: 1, avg checkers diff: 1.5
+epoch: 82, wins per 10: 0, avg checkers diff: -0.1
+epoch: 83, wins per 10: 0, avg checkers diff: -1.5
+epoch: 84, wins per 10: 1, avg checkers diff: 1.5
+epoch: 85, wins per 10: 1, avg checkers diff: 1.4
+epoch: 86, wins per 10: 0, avg checkers diff: -1.1
+epoch: 87, wins per 10: 1, avg checkers diff: 1.5
+Traceback (most recent call last):
+  File "c:\Users\Talmid\Desktop\backgammon proj\Backgammon\DQN_Trainer.py", line 194, in <module>
+    main()
+  File "c:\Users\Talmid\Desktop\backgammon proj\Backgammon\DQN_Trainer.py", line 109, in main
+    time = timeit.timeit(player1.get_actions(next_states, dones))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Talmid\AppData\Local\Programs\Python\Python311\Lib\timeit.py", line 234, in timeit
+    return Timer(stmt, setup, timer, globals).timeit(number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Talmid\AppData\Local\Programs\Python\Python311\Lib\timeit.py", line 130, in __init__
+    raise ValueError("stmt is neither a string nor callable")
+ValueError: stmt is neither a string nor callable

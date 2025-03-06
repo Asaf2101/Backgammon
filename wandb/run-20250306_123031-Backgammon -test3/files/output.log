@@ -1,0 +1,340 @@
+epoch: 1, wins per 10: 1, avg checkers diff: -1.1
+epoch: 2, wins per 10: 1, avg checkers diff: 1.5
+epoch: 3, wins per 10: 1, avg checkers diff: 1.5
+epoch: 4, wins per 10: 0, avg checkers diff: -0.1
+epoch: 5, wins per 10: 1, avg checkers diff: 1.5
+epoch: 6, wins per 10: 1, avg checkers diff: 1.3
+epoch: 7, wins per 10: 1, avg checkers diff: 0.7
+epoch: 8, wins per 10: 1, avg checkers diff: 1.1
+epoch: 9, wins per 10: 1, avg checkers diff: 1.3
+epoch: 10, wins per 10: 1, avg checkers diff: 1.5
+epoch: 11, wins per 10: 1, avg checkers diff: 1.0
+epoch: 12, wins per 10: 1, avg checkers diff: 0.5
+epoch: 13, wins per 10: 1, avg checkers diff: 1.3
+epoch: 14, wins per 10: 0, avg checkers diff: -0.3
+epoch: 15, wins per 10: 1, avg checkers diff: 0.7
+epoch: 16, wins per 10: 0, avg checkers diff: -0.5
+epoch: 17, wins per 10: 1, avg checkers diff: 0.7
+epoch: 18, wins per 10: 1, avg checkers diff: 1.3
+epoch: 19, wins per 10: 0, avg checkers diff: -0.6
+epoch: 20, wins per 10: 0, avg checkers diff: -0.5
+epoch: 21, wins per 10: 0, avg checkers diff: -0.1
+epoch: 22, wins per 10: 0, avg checkers diff: -0.5
+epoch: 23, wins per 10: 1, avg checkers diff: 0.7
+epoch: 24, wins per 10: 0, avg checkers diff: -0.7
+epoch: 25, wins per 10: 0, avg checkers diff: -0.2
+epoch: 26, wins per 10: 1, avg checkers diff: 1.2
+epoch: 27, wins per 10: 1, avg checkers diff: 0.9
+epoch: 28, wins per 10: 1, avg checkers diff: 1.5
+epoch: 29, wins per 10: 1, avg checkers diff: 0.3
+epoch: 30, wins per 10: 1, avg checkers diff: 0.1
+epoch: 31, wins per 10: 1, avg checkers diff: 0.6
+epoch: 32, wins per 10: 0, avg checkers diff: -0.3
+epoch: 33, wins per 10: 0, avg checkers diff: -1.1
+epoch: 34, wins per 10: 1, avg checkers diff: 1.3
+epoch: 35, wins per 10: 1, avg checkers diff: 1.5
+epoch: 36, wins per 10: 0, avg checkers diff: -0.6
+epoch: 37, wins per 10: 0, avg checkers diff: -0.6
+epoch: 38, wins per 10: 1, avg checkers diff: 1.0
+epoch: 39, wins per 10: 0, avg checkers diff: -0.3
+epoch: 40, wins per 10: 0, avg checkers diff: -0.1
+epoch: 41, wins per 10: 1, avg checkers diff: 0.6
+epoch: 42, wins per 10: 1, avg checkers diff: 0.5
+epoch: 43, wins per 10: 1, avg checkers diff: 1.5
+epoch: 44, wins per 10: 1, avg checkers diff: 0.2
+epoch: 45, wins per 10: 1, avg checkers diff: 1.4
+epoch: 46, wins per 10: 1, avg checkers diff: 0.2
+epoch: 47, wins per 10: 0, avg checkers diff: -0.7
+epoch: 48, wins per 10: 0, avg checkers diff: -0.5
+epoch: 49, wins per 10: 1, avg checkers diff: 1.1
+epoch: 50, wins per 10: 1, avg checkers diff: 0.3
+epoch: 51, wins per 10: 1, avg checkers diff: 1.3
+epoch: 52, wins per 10: 1, avg checkers diff: 1.5
+epoch: 53, wins per 10: 1, avg checkers diff: 1.5
+epoch: 54, wins per 10: 1, avg checkers diff: 1.5
+epoch: 55, wins per 10: 1, avg checkers diff: 0.3
+epoch: 56, wins per 10: 1, avg checkers diff: 0.3
+epoch: 57, wins per 10: 0, avg checkers diff: -1.3
+epoch: 58, wins per 10: 0, avg checkers diff: -0.1
+epoch: 59, wins per 10: 1, avg checkers diff: 1.5
+epoch: 60, wins per 10: 1, avg checkers diff: 0.2
+epoch: 61, wins per 10: 1, avg checkers diff: 1.2
+epoch: 62, wins per 10: 0, avg checkers diff: -0.1
+epoch: 63, wins per 10: 1, avg checkers diff: 1.5
+epoch: 64, wins per 10: 0, avg checkers diff: -0.5
+epoch: 65, wins per 10: 1, avg checkers diff: 0.3
+epoch: 66, wins per 10: 1, avg checkers diff: 0.9
+epoch: 67, wins per 10: 1, avg checkers diff: 1.4
+epoch: 68, wins per 10: 1, avg checkers diff: 0.5
+epoch: 69, wins per 10: 0, avg checkers diff: -0.8
+epoch: 70, wins per 10: 0, avg checkers diff: -0.9
+epoch: 71, wins per 10: 1, avg checkers diff: 0.4
+epoch: 72, wins per 10: 1, avg checkers diff: 0.4
+epoch: 73, wins per 10: 1, avg checkers diff: 1.3
+epoch: 74, wins per 10: 0, avg checkers diff: -0.8
+epoch: 75, wins per 10: 0, avg checkers diff: -0.2
+epoch: 76, wins per 10: 1, avg checkers diff: 0.7
+epoch: 77, wins per 10: 0, avg checkers diff: -0.3
+epoch: 78, wins per 10: 1, avg checkers diff: 1.5
+epoch: 79, wins per 10: 0, avg checkers diff: -0.9
+epoch: 80, wins per 10: 1, avg checkers diff: 1.5
+epoch: 81, wins per 10: 1, avg checkers diff: 1.2
+epoch: 82, wins per 10: 1, avg checkers diff: 1.3
+epoch: 83, wins per 10: 0, avg checkers diff: -1.5
+epoch: 84, wins per 10: 0, avg checkers diff: -0.9
+epoch: 85, wins per 10: 1, avg checkers diff: 1.5
+epoch: 86, wins per 10: 1, avg checkers diff: 1.5
+epoch: 87, wins per 10: 0, avg checkers diff: -0.5
+epoch: 88, wins per 10: 0, avg checkers diff: -1.5
+epoch: 89, wins per 10: 1, avg checkers diff: 1.5
+epoch: 90, wins per 10: 1, avg checkers diff: 1.5
+epoch: 91, wins per 10: 1, avg checkers diff: 0.9
+epoch: 92, wins per 10: 0, avg checkers diff: -0.6
+epoch: 93, wins per 10: 0, avg checkers diff: -1.5
+epoch: 94, wins per 10: 0, avg checkers diff: -0.6
+epoch: 95, wins per 10: 1, avg checkers diff: 0.2
+epoch: 96, wins per 10: 1, avg checkers diff: 1.5
+epoch: 97, wins per 10: 1, avg checkers diff: 0.5
+epoch: 98, wins per 10: 1, avg checkers diff: 1.2
+epoch: 99, wins per 10: 0, avg checkers diff: -1.2
+epoch: 100, wins per 10: 0, avg checkers diff: -0.1
+epoch: 101, wins per 10: 0, avg checkers diff: -0.6
+epoch: 102, wins per 10: 1, avg checkers diff: 0.2
+epoch: 103, wins per 10: 1, avg checkers diff: 1.5
+epoch: 104, wins per 10: 1, avg checkers diff: 0.6
+epoch: 105, wins per 10: 1, avg checkers diff: 1.5
+epoch: 106, wins per 10: 1, avg checkers diff: 1.3
+epoch: 107, wins per 10: 0, avg checkers diff: -1.2
+epoch: 108, wins per 10: 1, avg checkers diff: 0.6
+epoch: 109, wins per 10: 1, avg checkers diff: 0.8
+epoch: 110, wins per 10: 0, avg checkers diff: -0.2
+epoch: 111, wins per 10: 1, avg checkers diff: 1.5
+epoch: 112, wins per 10: 0, avg checkers diff: -1.0
+time: 0.0495786000001317
+step: 24
+time: 0.04119249999985186
+step: 2
+time: 0.012182699999357283
+step: 2
+time: 0.049845100000311504
+step: 2
+time: 0.03908679999949527
+step: 2
+time: 0.04457600000023376
+step: 2
+time: 0.04346949999944627
+step: 2
+time: 0.04474989999926038
+step: 2
+time: 0.04180930000075023
+step: 2
+time: 0.0463011000001643
+step: 2
+time: 0.047484499999882246
+step: 2
+time: 0.011733100000128616
+step: 2
+time: 0.052681899999697634
+step: 2
+time: 0.04573199999958888
+step: 2
+time: 0.04152090000025055
+step: 2
+time: 0.04501509999954578
+step: 2
+time: 0.03923819999999978
+step: 2
+time: 0.04081769999993412
+step: 2
+epoch: 113, loss = 1.556, wins per 10: 1, avg checkers diff: 1.5
+time: 0.044687900000099035
+step: 2
+time: 0.04669169999942824
+step: 2
+time: 0.04125490000024001
+step: 2
+time: 0.04622829999971145
+step: 2
+time: 0.04512410000006639
+step: 2
+time: 0.041751599999770406
+step: 2
+time: 0.041639500000201224
+step: 2
+time: 0.040993300000081945
+step: 2
+time: 0.044035700000677025
+step: 2
+time: 0.041744500000277185
+step: 2
+time: 0.044311300000117626
+step: 2
+time: 0.04411880000043311
+step: 2
+time: 0.012559099999634782
+step: 2
+time: 0.049535000000105356
+step: 2
+time: 0.011762999999518797
+step: 2
+time: 0.047453100000893755
+step: 2
+time: 0.042649299999538925
+step: 2
+time: 0.012696799999503128
+step: 2
+time: 0.047574400000485184
+step: 2
+time: 0.05046669999956066
+step: 2
+time: 0.043808399999761605
+step: 2
+time: 0.0419781000000512
+step: 2
+time: 0.011724400000275637
+step: 2
+time: 0.04752999999982421
+step: 2
+time: 0.05075600000054692
+step: 2
+time: 0.012413800000103947
+step: 2
+time: 0.04767549999996845
+step: 2
+time: 0.04183459999967454
+step: 2
+time: 0.05016140000043379
+step: 2
+time: 0.011794000000008964
+step: 2
+time: 0.05379339999944932
+step: 2
+time: 0.04649440000048344
+step: 2
+time: 0.04113390000020445
+step: 2
+time: 0.05582400000002963
+step: 2
+time: 0.012200799999845913
+step: 2
+time: 0.053094599999894854
+step: 2
+time: 0.04790640000010171
+step: 2
+time: 0.04932829999961541
+step: 2
+time: 0.048368800000389456
+step: 2
+time: 0.04524620000029245
+step: 2
+time: 0.04887910000070406
+step: 2
+time: 0.03896640000039042
+step: 2
+time: 0.04292520000035438
+step: 2
+time: 0.06152289999954519
+step: 2
+time: 0.06302159999995638
+step: 2
+time: 0.044257399999878544
+step: 2
+time: 0.011674899999889021
+step: 2
+time: 0.048593000000437314
+step: 2
+time: 0.04044699999940349
+step: 2
+epoch: 114, loss = 6.545, wins per 10: 1, avg checkers diff: 1.5
+time: 0.0434120999998413
+step: 2
+time: 0.012105099999644153
+step: 2
+time: 0.04029340000033699
+step: 2
+time: 0.03753069999947911
+step: 2
+time: 0.047149300000455696
+step: 2
+time: 0.0421027000002141
+step: 2
+time: 0.042339999999967404
+step: 2
+time: 0.041807199999311706
+step: 2
+time: 0.041146999999909895
+step: 2
+time: 0.04176980000011099
+step: 2
+time: 0.04058620000068913
+step: 2
+time: 0.03650319999997009
+step: 2
+time: 0.04397449999942182
+step: 2
+time: 0.04355980000036652
+step: 2
+time: 0.042136199999731616
+step: 2
+time: 0.04371710000032181
+step: 2
+time: 0.012639700000363518
+step: 2
+time: 0.043640000000777945
+step: 2
+time: 0.043049700000665325
+step: 2
+time: 0.04247769999983575
+step: 2
+time: 0.04058140000051935
+step: 2
+time: 0.040426700000352866
+step: 2
+time: 0.08585049999965122
+step: 2
+time: 0.056619099999807077
+step: 2
+time: 0.04081750000023021
+step: 2
+time: 0.03853179999987333
+step: 2
+time: 0.042864900000495254
+step: 2
+time: 0.0405864999993355
+step: 2
+time: 0.04337239999949816
+step: 2
+time: 0.04071589999966818
+step: 2
+time: 0.045330299999477575
+step: 2
+time: 0.04015720000006695
+step: 2
+time: 0.012833899999350251
+step: 2
+time: 0.041780800000196905
+step: 2
+time: 0.04089829999975336
+step: 2
+time: 0.04380270000001474
+step: 2
+time: 0.04046360000029381
+step: 2
+time: 0.042369099999632454
+step: 2
+time: 0.045688399999562535
+step: 2
+time: 0.0418853000001036
+step: 2
+time: 0.04115529999944556
+step: 2
+time: 0.04044770000018616
+step: 2
+time: 0.04171089999999822
+step: 2
+time: 0.03878340000028402
+step: 2
+time: 0.03510699999969802
+step: 2
+time: 0.039198299999952724
+step: 2

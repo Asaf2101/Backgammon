@@ -9,6 +9,7 @@ import wandb
 import os
 from Constants import *
 from Tester import Tester
+import time
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-test2'
+    run_id = '-test3'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -78,6 +79,7 @@ def main():
     for epoch in range(start_epoch, epochs):
         state = State()
         env.state = state
+        start_time = time.time()
         while not env.is_end_of_game(state):
             og_state = state.copy()
             action = player1.get_action(state = state, epoch = epoch)
@@ -102,7 +104,7 @@ def main():
             
             if len(buffer) < 5000:
                 continue
-
+            
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
             Q_values = Q(states, actions)
             next_actions = player1.get_actions(next_states, dones)
@@ -113,6 +115,8 @@ def main():
             optim.step()
             optim.zero_grad()
 
+        end = time.time() - start_time
+        print('time', end)
 
         if epoch % C == 0:
             Q_hat.load_state_dict(Q.state_dict())
@@ -129,18 +133,11 @@ def main():
             # update data
             wins_per_10.append(wins)
             avg_checkers_diffs.append(avg_checkers_diff)
-            # losses.append(loss)
             
             log_data = {
                 'Wins Per 10 Games': wins,
                 'Average Checkers Diff Per 10 Games': avg_checkers_diff
             }
-
-            # wandb.log({
-            #     'Wins Per 10 Games': wins,
-            #     'Average Checkers Diff Per 10 Games': avg_checkers_diff,
-            #     'Loss': loss
-            # })
 
             # only relate to loss when it got computed
             if 'loss' in locals():
@@ -167,7 +164,7 @@ def main():
             player1.train_mode()
 
         # save checkpoint
-        if epoch % 5000 == 0 and epoch > 0:
+        if epoch % 1000 == 0 and epoch > 0:
             checkpoint = {
                 'epoch': epoch,
                 'model_state_dict': player1.DQN.state_dict(),

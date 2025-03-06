@@ -50,7 +50,7 @@ class DQN_Agent:
             if dones[i].item():
                 actions.append(((-1, -1), (-1, -1)))
             else:
-                actions.append(self.get_action(state = State.to_state(state, self.player), train = True))
+                actions.append(self.get_action(state = State.to_state(state, self.player), train = False))
         return torch.tensor(actions).view(-1, 4).to(torch.float32)
 
     def epsilon_greedy(self, epoch, start = epsilon_start, final = epsilon_final, decay = epsilon_decay):
