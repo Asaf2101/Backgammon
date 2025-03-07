@@ -1,0 +1,16 @@
+{"time":"2025-03-07T11:15:02.9956642+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250307_111502-Backgammon -test7\\logs\\debug-core.log"}
+{"time":"2025-03-07T11:15:03.1185842+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -test7"}
+{"time":"2025-03-07T11:15:03.1185842+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -test7"}
+{"time":"2025-03-07T11:15:03.1185842+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T11:15:03.1185842+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T11:15:03.1191089+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T11:15:03.436356+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-07T18:21:05.6285546+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-07T18:21:05.6322662+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-07T18:21:06.5447026+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-07T18:21:06.6573094+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.1126068}],"total_operations":1}}
+{"time":"2025-03-07T18:21:06.7917588+02:00","level":"INFO","msg":"stream: closing","id":"Backgammon -test7"}
+{"time":"2025-03-07T18:21:06.7917588+02:00","level":"INFO","msg":"handler: closed","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T18:21:06.7917588+02:00","level":"INFO","msg":"sender: closed","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T18:21:06.7917588+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"Backgammon -test7"}
+{"time":"2025-03-07T18:21:06.7922653+02:00","level":"INFO","msg":"stream: closed","id":"Backgammon -test7"}

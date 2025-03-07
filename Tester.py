@@ -30,6 +30,7 @@ class Tester:
                 player = self.switch_players(player)
             if self.env.end_of_game() == 1: white_win += 1
             elif self.env.end_of_game() == -1: black_win += 1
+        print('finished testing')
         return black_win, white_win
 
     def switch_players(self, player):

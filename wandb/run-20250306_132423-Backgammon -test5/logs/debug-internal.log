@@ -1,0 +1,14 @@
+{"time":"2025-03-06T13:24:23.5977465+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250306_132423-Backgammon -test5\\logs\\debug-core.log"}
+{"time":"2025-03-06T13:24:23.7202097+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -test5"}
+{"time":"2025-03-06T13:24:23.7203251+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -test5"}
+{"time":"2025-03-06T13:24:23.7203251+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -test5"}
+{"time":"2025-03-06T13:24:23.7203251+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -test5"}
+{"time":"2025-03-06T13:24:23.7203251+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -test5"}
+{"time":"2025-03-06T13:24:24.0713314+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T14:08:09.6873616+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-test5/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-06T14:08:11.8119353+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-test5/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-06T14:27:56.5551545+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-06T14:27:56.5551545+02:00","level":"WARN","msg":"sender: taking a long time","seconds":1185.930359,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"tjsgjuflybsr\"  connection_id:\"127.0.0.1:53565\")"}
+{"time":"2025-03-06T14:27:56.5620639+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-test5/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-06T14:28:00.9377407+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.100.102.6:53569->35.186.228.49:443: wsarecv: An established connection was aborted by the software in your host machine."}
+{"time":"2025-03-06T14:28:05.6054864+02:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1194.9806909,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"tjsgjuflybsr\"  connection_id:\"127.0.0.1:53565\")"}

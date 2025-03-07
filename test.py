@@ -4,7 +4,6 @@ from DQN_Agent import *
 from Human_Agent import *
 import numpy as np
 import timeit
-import sys
 
 env = Environment(State(board=np.array([0, -1, -1, -1, -2, -3,
                                          1, 0, 2, 2, 0, 1,
