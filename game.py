@@ -13,12 +13,12 @@ pygame.init()
 graphics = Graphics()
 env = Environment(State())
 
-player1 = Human_Agent(1, env, graphics)
+# player1 = Human_Agent(1, env, graphics)
 # player2 = Human_Agent(2, env, graphics)
 # player1 = Random_Agent(1, env, graphics)
-# player2 = Random_Agent(2, env, graphics)
-# player1 = DQN_Agent(1, env = env, train = False)
-player2 = DQN_Agent(2, env = env, train = False)
+player2 = Random_Agent(2, env, graphics)
+player1 = DQN_Agent(1, env = env, train = False)
+# player2 = DQN_Agent(2, env = env, train = False)
 
 player = player1
 graphics(env.state)

@@ -5,8 +5,9 @@ from Random_Agent import Random_Agent
 from DQN_Agent import DQN_Agent
 
 # path = 'Data/Player1/test1.pth'
-# env = Environment()
-# player1 = DQN_Agent(1, env = env, train = False, parameters_path = path)
+env = Environment()
+player1 = Random_Agent(1, env = env, graphics = None)
+player2 = DQN_Agent(2, env = env, train = False, parameters_path = None)
 # player2 = Random_Agent(2, env = env, graphics = None)
 
 class Tester:
@@ -39,7 +40,7 @@ class Tester:
         else:
             return self.player1
 
-# tester = Tester(env = env, player1 = player1, player2 = player2)
-# games_num = 300
-# black_win, white_win = tester.test(games_num)
-# print('Black:', black_win, 'White:', white_win, '-->', black_win / (black_win + white_win) * 100,'%')
+tester = Tester(env = env, player1 = player1, player2 = player2)
+games_num = 500
+black_win, white_win = tester.test(games_num)
+print('Black:', black_win, 'White:', white_win, '-->', black_win / (black_win + white_win) * 100,'%')

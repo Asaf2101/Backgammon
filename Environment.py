@@ -111,7 +111,7 @@ class Environment:
         start_w_out, start_b_out = white_checkers_out, black_checkers_out
         start_w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         start_b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
-        start_b_distance = sum(index * abs(value) for index, value in enumerate(board) if value < 0) + black_checkers_eaten * 24
+        # start_b_distance = sum(index * abs(value) for index, value in enumerate(board) if value < 0) + black_checkers_eaten * 24
         
         if player == -1:
             if from_area == 24:
@@ -164,7 +164,7 @@ class Environment:
         reward -= white_checkers_out - start_w_out
         reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
         reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
-        reward += 0.1 * (start_b_distance - b_distance)
+        # reward += 0.1 * (start_b_distance - b_distance)
 
         self.state.board = board
         self.state.checkers_eaten = white_checkers_eaten, black_checkers_eaten

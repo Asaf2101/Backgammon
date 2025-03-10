@@ -1,0 +1,7 @@
+{"time":"2025-03-10T08:40:59.5653689+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\Talmid\\Desktop\\backgammon proj\\Backgammon\\wandb\\run-20250310_084059-Backgammon -test7\\logs\\debug-core.log"}
+{"time":"2025-03-10T08:41:00.2530421+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -test7"}
+{"time":"2025-03-10T08:41:00.254623+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -test7"}
+{"time":"2025-03-10T08:41:00.2568276+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-10T08:41:00.2566541+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-10T08:41:00.2553023+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -test7"}
+{"time":"2025-03-10T08:41:10.9724929+02:00","level":"INFO","msg":"Starting system monitor"}
