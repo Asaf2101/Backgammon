@@ -111,8 +111,7 @@ class Environment:
         start_w_out, start_b_out = white_checkers_out, black_checkers_out
         start_w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         start_b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
-        # start_b_distance = sum(index * abs(value) for index, value in enumerate(board) if value < 0) + black_checkers_eaten * 24
-        
+                
         if player == -1:
             if from_area == 24:
                 black_checkers_eaten -= 1
@@ -156,7 +155,6 @@ class Environment:
         # calculate reward
         w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
-        b_distance = sum(index * abs(value) for index, value in enumerate(board) if value < 0) + black_checkers_eaten * 24
         reward = 0
         reward += white_checkers_eaten - start_w_eaten
         reward -= black_checkers_eaten - start_b_eaten
@@ -164,7 +162,6 @@ class Environment:
         reward -= white_checkers_out - start_w_out
         reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
         reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
-        # reward += 0.1 * (start_b_distance - b_distance)
 
         self.state.board = board
         self.state.checkers_eaten = white_checkers_eaten, black_checkers_eaten
@@ -279,7 +276,7 @@ class Environment:
         
         return actions
         
-    def get_indices(self, state : State, dice):  # returns the board indices legal to play from according to dice
+    def old_get_indices(self, state : State, dice):  # returns the board indices legal to play from according to dice
         player = state.player
         board : np.ndarray = state.board
         
@@ -302,9 +299,9 @@ class Environment:
 
     
     
-    # get all actions logic
+    # new get all actions logic
 
-    def get_indices_new(self, board, dice, player):  # returns the board indices legal to play from according to dice
+    def get_indices(self, board, dice, player):  # returns the board indices legal to play from according to dice
         player = player
         board : np.ndarray = board
         
@@ -358,7 +355,7 @@ class Environment:
                         half1 = (24, len(board) - dice1)
                         updated_board = board.copy()
                         updated_board[len(board) - dice1] -= 1
-                        indices2 = self.get_indices_new(updated_board, dice2, player)
+                        indices2 = self.get_indices(updated_board, dice2, player)
                         if indices2.size > 0:
                             actions.extend([(half1, (a, a - dice2)) for a in indices2])
                         else:
@@ -367,7 +364,7 @@ class Environment:
                         half1 = (24, len(board) - dice2)
                         updated_board = board.copy()
                         updated_board[len(board) - dice2] -= 1
-                        indices1 = self.get_indices_new(updated_board, dice1, player)
+                        indices1 = self.get_indices(updated_board, dice1, player)
                         if indices1.size > 0:
                             actions.extend([(half1, (a, a - dice1)) for a in indices1])
                         else:
@@ -388,7 +385,7 @@ class Environment:
                         half1 = (25, dice1 - 1)
                         updated_board = board.copy()
                         updated_board[dice1 - 1] += 1
-                        indices2 = self.get_indices_new(updated_board, dice2, player)
+                        indices2 = self.get_indices(updated_board, dice2, player)
                         if indices2.size > 0:  # if there is a move with the other dice as well
                             actions.extend([(half1, (a, a + dice2)) for a in indices2])
                         else:
@@ -397,7 +394,7 @@ class Environment:
                         half1 = (25, dice2 - 1)
                         updated_board = board.copy()
                         updated_board[dice2 - 1] += 1
-                        indices1 = self.get_indices_new(updated_board, dice1, player)
+                        indices1 = self.get_indices(updated_board, dice1, player)
                         if indices1.size > 0:
                             actions.extend([(half1, (a, a + dice1)) for a in indices1])
                         else:
@@ -441,9 +438,9 @@ class Environment:
         dice1, dice2 = state.dice
         board : np.ndarray = state.board
 
-        indices1 = self.get_indices_new(board, dice1, player)
-        indices2 = self.get_indices_new(board, dice2, player)
-        indices_1_2 = self.get_indices_new(board, dice1 + dice2, player)
+        indices1 = self.get_indices(board, dice1, player)
+        indices2 = self.get_indices(board, dice2, player)
+        indices_1_2 = self.get_indices(board, dice1 + dice2, player)
 
         # get same checker actions
         play1_2 = np.intersect1d(indices1, indices_1_2)
@@ -530,60 +527,63 @@ class Environment:
             else: action_out2 = np.empty((0, 4), dtype = np.int64)
         else: action_out2 = np.empty((0, 4), dtype = np.int64)
         
-        both_out_action = np.vstack((both_out_action, action_out1, action_out2))
+        both_out_actions = np.vstack((both_out_action, action_out1, action_out2))
         
-                    
-        # get same checker actions where second move is out move, and regular actions where
-        # one move is out move and the other a regular (not necessarily continuation)
-        if move1_out is not None:
-            if moves_dice2.shape[0] > 0:      # first dice2 move then move with dice1
-                boards = np.tile(board, (moves_dice2.shape[0], 1))
-                rows = np.arange(moves_dice2.shape[0])
-                cols_from = moves_dice2[:, 0]
-                cols_to = moves_dice2[:, 1]
-                if player == -1:
-                    boards[rows, cols_from] += 1
-                    boards[rows, cols_to] -= 1
-                else:
-                    boards[rows, cols_from] -= 1
-                    boards[rows, cols_to] += 1
-                continuation_out_moves1 = [self.get_checkers_out_move(row, dice1, player) for row in boards]
-                results = np.empty((len(continuation_out_moves1), 1), dtype=object)
-                results[:, 0] = continuation_out_moves1
-                filtered_results = np.array([[np.array([-1, -1]) if row[0] is None else row[0]] for row in results], dtype=object)
-                if filtered_results.size > 0:
-                    filtered_results = np.vstack(filtered_results)
-                else: filtered_results = np.empty((moves_dice2.shape[0], 2))
-                continuation_out_actions1 = np.hstack((moves_dice2, filtered_results))
-            else: continuation_out_actions1 = np.empty((0, 4))
+        # get same checker actions where second move is out move, and
+        # actions where one move is regular move and the other is out move (not necessarily same checker)
+        
+        # if move1_out is not None:
+        if moves_dice2.shape[0] > 0:      # first dice2 move then move with dice1
+            boards = np.tile(board, (moves_dice2.shape[0], 1))
+            rows = np.arange(moves_dice2.shape[0])
+            cols_from = moves_dice2[:, 0]
+            cols_to = moves_dice2[:, 1]
+            if player == -1:
+                boards[rows, cols_from] += 1
+                boards[rows, cols_to] -= 1
+            else:
+                boards[rows, cols_from] -= 1
+                boards[rows, cols_to] += 1
+            continuation_out_moves1 = [self.get_checkers_out_move(row, dice1, player) for row in boards]
+            results = np.empty((len(continuation_out_moves1), 1), dtype=object)
+            results[:, 0] = continuation_out_moves1
+            filtered_results = np.array([[np.array([None, None]) if row[0] is None else row[0]] for row in results], dtype=object)
+            if filtered_results.size > 0:
+                filtered_results = np.vstack(filtered_results)
+            else: filtered_results = np.empty((moves_dice2.shape[0], 2))
+            continuation_out_actions1 = np.hstack((moves_dice2, filtered_results))
         else: continuation_out_actions1 = np.empty((0, 4))
+        # else: continuation_out_actions1 = np.empty((0, 4))
         
-        if move2_out is not None:
-            if moves_dice1.shape[0] > 0:      # first dice1 move then move with dice2
-                boards = np.tile(board, (moves_dice1.shape[0], 1))
-                rows = np.arange(moves_dice1.shape[0])
-                cols_from = moves_dice1[:, 0]
-                cols_to = moves_dice1[:, 1]
-                if player == -1:
-                    boards[rows, cols_from] += 1
-                    boards[rows, cols_to] -= 1
-                else:
-                    boards[rows, cols_from] -= 1
-                    boards[rows, cols_to] += 1
-                continuation_out_moves2 = [self.get_checkers_out_move(row, dice2, player) for row in boards]
-                results = np.empty((len(continuation_out_moves2), 1), dtype=object)
-                results[:, 0] = continuation_out_moves2
-                filtered_results = np.array([[np.array([-1, -1]) if row[0] is None else row[0]] for row in results], dtype=object)
-                if filtered_results.size > 0:
-                    filtered_results = np.vstack(filtered_results)
-                else: filtered_results = np.empty((moves_dice1.shape[0], 2))
-                continuation_out_actions2 = np.hstack((moves_dice1, filtered_results))
-            else: continuation_out_actions2 = np.empty((0, 4))
+        # if move2_out is not None:
+        if moves_dice1.shape[0] > 0:      # first dice1 move then move with dice2
+            boards = np.tile(board, (moves_dice1.shape[0], 1))
+            rows = np.arange(moves_dice1.shape[0])
+            cols_from = moves_dice1[:, 0]
+            cols_to = moves_dice1[:, 1]
+            if player == -1:
+                boards[rows, cols_from] += 1
+                boards[rows, cols_to] -= 1
+            else:
+                boards[rows, cols_from] -= 1
+                boards[rows, cols_to] += 1
+            continuation_out_moves2 = [self.get_checkers_out_move(row, dice2, player) for row in boards]
+            results = np.empty((len(continuation_out_moves2), 1), dtype=object)
+            results[:, 0] = continuation_out_moves2
+            filtered_results = np.array([[np.array([None, None]) if row[0] is None else row[0]] for row in results], dtype=object)
+            if filtered_results.size > 0:
+                filtered_results = np.vstack(filtered_results)
+            else: filtered_results = np.empty((moves_dice1.shape[0], 2))
+            continuation_out_actions2 = np.hstack((moves_dice1, filtered_results))
         else: continuation_out_actions2 = np.empty((0, 4))
+        # else: continuation_out_actions2 = np.empty((0, 4))
 
         continuation_out_actions = np.vstack((continuation_out_actions1, continuation_out_actions2))
+        # remove actions that did not have out moves after first move
+        not_none_mask = continuation_out_actions[:, 2] != None
+        continuation_out_actions = continuation_out_actions[not_none_mask]
 
-        moves_out_actions = np.vstack((both_out_action, continuation_out_actions)).astype(np.int64)
+        moves_out_actions = np.vstack((both_out_actions, continuation_out_actions)).astype(np.int64)
 
         keys, inverse, counts = np.unique(moves_out_actions[:, :2], axis = 0, return_inverse = True, return_counts = True)
         keep_mask = ~((moves_out_actions[:, 2:] == -1).all(axis = -1) & (counts[inverse] > 1))
@@ -592,10 +592,10 @@ class Environment:
         moves_out_actions = np.unique(moves_out_actions, axis = 0)
         
         # get actions where first move is out move and there is not second move (out_moves)
-        if move1_out is not None and moves_dice2.shape[0] == 0:
+        if move1_out is not None and moves_dice2.shape[0] == 0 and both_out_action.size == 0:
             half_out_action1 = np.concatenate((move1_out, [-1, -1]))
         else: half_out_action1 = np.empty((0, 4), dtype = np.int64)
-        if move2_out is not None and moves_dice1.shape[0] == 0:
+        if move2_out is not None and moves_dice1.shape[0] == 0 and both_out_actions.size == 0:
             half_out_action2 = np.concatenate((move2_out, [-1, -1]))
         else: half_out_action2 = np.empty((0, 4), dtype = np.int64)
 
@@ -647,5 +647,4 @@ win +10, lose -10
 ate +1 each, eaten -1 each
 checkers out +1 each, enemy checkers out - 1 each
 checkers entered end zone +0.5*num, enemy checkers entered end zone -0.5*num
-checkers got closer to end zone +0.1*steps
 '''

@@ -8,8 +8,7 @@ class Random_Agent:
         self.player = player
         self.env = env
         self.graphics = graphics
-        self.mode = 0
-    
+
     def get_action(self, events = None, state = None, train = False):
         if self.graphics is not None:
             self.graphics(self.env.state)
