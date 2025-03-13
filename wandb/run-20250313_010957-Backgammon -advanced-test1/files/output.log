@@ -1,0 +1,5 @@
+epoch: 10, wins per 10: 1, avg checkers diff: -12.7
+epoch: 20, wins per 10: 4, avg checkers diff: -4.3
+epoch: 30, wins per 10: 1, avg checkers diff: -11.6
+epoch: 40, wins per 10: 1, avg checkers diff: -11.7
+epoch: 50, loss = 0.603, wins per 10: 1, avg checkers diff: -11.0

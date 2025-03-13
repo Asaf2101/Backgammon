@@ -87,8 +87,6 @@ class Environment:
         elif self.state.blocked == 3:
             self.state.throw = True
             self.state.blocked = 0
-        # print('blocked:', self.state.blocked)
-        # print('--------------------------------------')
 
         if self.end_of_game() == 1:
             reward -= 10
@@ -156,12 +154,15 @@ class Environment:
         w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
         reward = 0
-        reward += white_checkers_eaten - start_w_eaten
-        reward -= black_checkers_eaten - start_b_eaten
+        if player == -1:
+            reward += white_checkers_eaten - start_w_eaten
+        if player == 1:
+            reward -= black_checkers_eaten - start_b_eaten
         reward += black_checkers_out - start_b_out
         reward -= white_checkers_out - start_w_out
-        reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
-        reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
+        if not self.all_checkers_in_home(board, player):
+            reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
+            reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
 
         self.state.board = board
         self.state.checkers_eaten = white_checkers_eaten, black_checkers_eaten
@@ -354,7 +355,7 @@ class Environment:
                     if self.can_eaten_play(state, dice1):
                         half1 = (24, len(board) - dice1)
                         updated_board = board.copy()
-                        updated_board[len(board) - dice1] -= 1
+                        updated_board[len(board) - dice1] -= 2
                         indices2 = self.get_indices(updated_board, dice2, player)
                         if indices2.size > 0:
                             actions.extend([(half1, (a, a - dice2)) for a in indices2])
@@ -363,7 +364,7 @@ class Environment:
                     if self.can_eaten_play(state, dice2):
                         half1 = (24, len(board) - dice2)
                         updated_board = board.copy()
-                        updated_board[len(board) - dice2] -= 1
+                        updated_board[len(board) - dice2] -= 2
                         indices1 = self.get_indices(updated_board, dice1, player)
                         if indices1.size > 0:
                             actions.extend([(half1, (a, a - dice1)) for a in indices1])
@@ -384,7 +385,7 @@ class Environment:
                     if self.can_eaten_play(state, dice1):
                         half1 = (25, dice1 - 1)
                         updated_board = board.copy()
-                        updated_board[dice1 - 1] += 1
+                        updated_board[dice1 - 1] += 2
                         indices2 = self.get_indices(updated_board, dice2, player)
                         if indices2.size > 0:  # if there is a move with the other dice as well
                             actions.extend([(half1, (a, a + dice2)) for a in indices2])
@@ -393,7 +394,7 @@ class Environment:
                     if self.can_eaten_play(state, dice2):
                         half1 = (25, dice2 - 1)
                         updated_board = board.copy()
-                        updated_board[dice2 - 1] += 1
+                        updated_board[dice2 - 1] += 2
                         indices1 = self.get_indices(updated_board, dice1, player)
                         if indices1.size > 0:
                             actions.extend([(half1, (a, a + dice1)) for a in indices1])

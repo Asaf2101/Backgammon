@@ -9,6 +9,7 @@ import wandb
 import os
 from Constants import *
 from Tester import Tester
+from Advanced_Random_Agent import Advanced_Random_Agent
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
     env = Environment(State())
     player1 = DQN_Agent(1, env = env, train = True)
     player2 = Random_Agent(2, env = env)
+    # player2 = Advanced_Random_Agent(2, env = env)
     buffer = ReplayBuffer()
     Q = player1.DQN
     Q_hat : DQN = Q.copy()
@@ -34,7 +36,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-test10'
+    run_id = '-regTest1'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'

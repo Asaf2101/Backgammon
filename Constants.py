@@ -27,12 +27,12 @@ gamma = 0.99
 
 epsilon_start = 1
 epsilon_final = 0.01
-epsilon_decay = 500
+epsilon_decay = 800
 
 epochs = 10000
 C = 50
 batch_size = 32
-learning_rate = 0.001
+learning_rate = 0.0001
 
 if torch.cuda.is_available():
     device = torch.device('cuda')

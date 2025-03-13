@@ -1,0 +1,16 @@
+{"time":"2025-03-13T13:51:53.6027392+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250313_135153-Backgammon -regTest1\\logs\\debug-core.log"}
+{"time":"2025-03-13T13:51:53.7214597+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -regTest1"}
+{"time":"2025-03-13T13:51:53.7214597+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -regTest1"}
+{"time":"2025-03-13T13:51:53.7214597+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T13:51:53.7214597+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T13:51:53.7214597+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T13:51:54.0425074+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T22:39:34.0823234+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T22:39:34.086367+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T22:39:35.1153345+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.5906735,"progress":"65.8KB/65.8KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.5901569,"progress":"189B/189B"},{"desc":"uploading config.yaml","runtime_seconds":0.3766765,"progress":"1.0KB/1.0KB"}],"total_operations":3}}
+{"time":"2025-03-13T22:39:35.2143554+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T22:39:35.4885604+02:00","level":"INFO","msg":"stream: closing","id":"Backgammon -regTest1"}
+{"time":"2025-03-13T22:39:35.4885604+02:00","level":"INFO","msg":"handler: closed","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T22:39:35.4890669+02:00","level":"INFO","msg":"sender: closed","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T22:39:35.4890669+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"Backgammon -regTest1"}
+{"time":"2025-03-13T22:39:35.4890669+02:00","level":"INFO","msg":"stream: closed","id":"Backgammon -regTest1"}
