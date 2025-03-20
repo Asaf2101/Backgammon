@@ -36,7 +36,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-regTest2'
+    run_id = '-regTest3'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'

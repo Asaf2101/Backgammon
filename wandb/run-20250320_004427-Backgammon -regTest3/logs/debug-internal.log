@@ -1,0 +1,15 @@
+{"time":"2025-03-20T00:44:27.9496369+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250320_004427-Backgammon -regTest3\\logs\\debug-core.log"}
+{"time":"2025-03-20T00:44:28.086866+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -regTest3"}
+{"time":"2025-03-20T00:44:28.0873705+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -regTest3"}
+{"time":"2025-03-20T00:44:28.0873705+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -regTest3"}
+{"time":"2025-03-20T00:44:28.0873705+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -regTest3"}
+{"time":"2025-03-20T00:44:28.0873705+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -regTest3"}
+{"time":"2025-03-20T00:44:28.4847735+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-20T09:05:29.1586977+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-regTest3/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-20T09:05:29.2767226+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-20T09:05:29.2777246+02:00","level":"WARN","msg":"sender: taking a long time","seconds":11989.5130267,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"fmndotqiocuj\"  connection_id:\"127.0.0.1:65324\")"}
+{"time":"2025-03-20T09:05:31.4384556+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-regTest3/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-20T09:05:31.5658761+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-20T09:05:36.2482195+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-regTest3/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-20T09:05:36.2482195+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-20T09:05:45.5065775+02:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":12006.4405174,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"fmndotqiocuj\"  connection_id:\"127.0.0.1:65324\")"}

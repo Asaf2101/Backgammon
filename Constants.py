@@ -27,7 +27,7 @@ gamma = 0.99
 
 epsilon_start = 1
 epsilon_final = 0.01
-epsilon_decay = 800
+epsilon_decay = 1000
 
 epochs = 10000
 C = 50
