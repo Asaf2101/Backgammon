@@ -1,0 +1,43 @@
+epoch: 10, wins per 10: 8, avg checkers diff: 6.4
+epoch: 20, wins per 10: 8, avg checkers diff: 9.1
+epoch: 30, wins per 10: 8, avg checkers diff: 7.1
+epoch: 40, wins per 10: 9, avg checkers diff: 10.4
+epoch: 50, wins per 10: 9, avg checkers diff: 10.5
+epoch: 60, wins per 10: 8, avg checkers diff: 8.0
+epoch: 70, wins per 10: 8, avg checkers diff: 8.3
+epoch: 80, wins per 10: 7, avg checkers diff: 4.3
+epoch: 90, wins per 10: 7, avg checkers diff: 5.1
+epoch: 100, wins per 100: 81, avg checkers diff: 7.87
+epoch: 110, wins per 10: 17, avg checkers diff: 16.5
+epoch: 120, wins per 10: 8, avg checkers diff: 8.0
+epoch: 130, wins per 10: 7, avg checkers diff: 9.0
+epoch: 140, wins per 10: 10, avg checkers diff: 12.6
+epoch: 150, wins per 10: 8, avg checkers diff: 7.5
+epoch: 160, wins per 10: 6, avg checkers diff: 3.8
+epoch: 170, wins per 10: 8, avg checkers diff: 9.0
+epoch: 180, wins per 10: 8, avg checkers diff: 9.0
+epoch: 190, wins per 10: 7, avg checkers diff: 6.7
+epoch: 200, wins per 100: 78, avg checkers diff: 8.1
+finished testing: 80.0 %
+epoch: 210, wins per 10: 18, avg checkers diff: 21.0
+epoch: 220, wins per 10: 8, avg checkers diff: 7.3
+epoch: 230, wins per 10: 6, avg checkers diff: -0.3
+epoch: 240, wins per 10: 8, avg checkers diff: 8.0
+epoch: 250, wins per 10: 8, avg checkers diff: 8.2
+epoch: 260, wins per 10: 7, avg checkers diff: 5.7
+epoch: 270, wins per 10: 9, avg checkers diff: 12.4
+epoch: 280, wins per 10: 8, avg checkers diff: 7.8
+epoch: 290, wins per 10: 6, avg checkers diff: 2.7
+epoch: 300, wins per 100: 76, avg checkers diff: 6.74
+epoch: 310, wins per 10: 14, avg checkers diff: 8.1
+epoch: 320, wins per 10: 7, avg checkers diff: 6.5
+epoch: 330, wins per 10: 9, avg checkers diff: 13.0
+epoch: 340, wins per 10: 8, avg checkers diff: 9.5
+epoch: 350, wins per 10: 7, avg checkers diff: 7.1
+epoch: 360, wins per 10: 7, avg checkers diff: 4.3
+epoch: 370, wins per 10: 7, avg checkers diff: 5.3
+epoch: 380, wins per 10: 7, avg checkers diff: 4.0
+epoch: 390, wins per 10: 9, avg checkers diff: 11.3
+epoch: 400, wins per 100: 76, avg checkers diff: 7.18
+finished testing: 74.0 %
+epoch: 410, loss = 1.673, wins per 10: 15, avg checkers diff: 13.6

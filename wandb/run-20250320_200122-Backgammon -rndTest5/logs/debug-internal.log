@@ -1,0 +1,7 @@
+{"time":"2025-03-20T20:01:23.0664766+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250320_200122-Backgammon -rndTest5\\logs\\debug-core.log"}
+{"time":"2025-03-20T20:01:23.3329716+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -rndTest5"}
+{"time":"2025-03-20T20:01:23.3329716+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -rndTest5"}
+{"time":"2025-03-20T20:01:23.3329716+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -rndTest5"}
+{"time":"2025-03-20T20:01:23.3329716+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -rndTest5"}
+{"time":"2025-03-20T20:01:23.3329716+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -rndTest5"}
+{"time":"2025-03-20T20:01:23.6250735+02:00","level":"INFO","msg":"Starting system monitor"}

@@ -18,6 +18,7 @@ class DQN_Agent:
         if parameters_path:
             self.DQN.load_params(parameters_path)
         self.train = train
+        self.train_mode()
         self.player = player
         self.env = env
     

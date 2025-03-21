@@ -1,0 +1,724 @@
+epoch: 10, wins per 10: 4, avg checkers diff: -5.7
+epoch: 20, wins per 10: 6, avg checkers diff: 1.7
+epoch: 30, wins per 10: 8, avg checkers diff: 4.7
+epoch: 40, wins per 10: 4, avg checkers diff: -1.5
+epoch: 50, wins per 10: 7, avg checkers diff: 5.1
+epoch: 60, wins per 10: 6, avg checkers diff: 0.4
+epoch: 70, wins per 10: 6, avg checkers diff: 3.5
+epoch: 80, wins per 10: 6, avg checkers diff: 5.2
+epoch: 90, wins per 10: 4, avg checkers diff: -3.5
+epoch: 100, wins per 100: 57, avg checkers diff: 1.01
+epoch: 110, wins per 10: 5, avg checkers diff: -2.0
+epoch: 120, wins per 10: 7, avg checkers diff: 3.0
+epoch: 130, wins per 10: 6, avg checkers diff: 2.8
+epoch: 140, wins per 10: 4, avg checkers diff: -3.2
+epoch: 150, wins per 10: 7, avg checkers diff: 4.1
+epoch: 160, wins per 10: 7, avg checkers diff: 6.3
+epoch: 170, wins per 10: 6, avg checkers diff: 4.1
+epoch: 180, wins per 10: 5, avg checkers diff: 0.3
+epoch: 190, wins per 10: 4, avg checkers diff: -0.4
+epoch: 200, wins per 100: 59, avg checkers diff: 2.2
+finished testing: 56.00000000000001 %
+epoch: 210, wins per 10: 5, avg checkers diff: -1.8
+epoch: 220, wins per 10: 4, avg checkers diff: -4.5
+epoch: 230, wins per 10: 4, avg checkers diff: -2.3
+epoch: 240, wins per 10: 6, avg checkers diff: 2.4
+epoch: 250, wins per 10: 6, avg checkers diff: 1.3
+epoch: 260, wins per 10: 5, avg checkers diff: -0.1
+epoch: 270, wins per 10: 6, avg checkers diff: 1.6
+epoch: 280, wins per 10: 6, avg checkers diff: 2.5
+epoch: 290, wins per 10: 5, avg checkers diff: 0.6
+epoch: 300, wins per 100: 51, avg checkers diff: -0.08
+epoch: 310, wins per 10: 7, avg checkers diff: 3.7
+epoch: 320, wins per 10: 6, avg checkers diff: 1.5
+epoch: 330, wins per 10: 6, avg checkers diff: 0.9
+epoch: 340, wins per 10: 6, avg checkers diff: 3.6
+epoch: 350, wins per 10: 6, avg checkers diff: 2.3
+epoch: 360, wins per 10: 5, avg checkers diff: -1.6
+epoch: 370, wins per 10: 4, avg checkers diff: -2.3
+epoch: 380, wins per 10: 9, avg checkers diff: 7.8
+epoch: 390, wins per 10: 7, avg checkers diff: 6.2
+epoch: 400, wins per 100: 59, avg checkers diff: 1.97
+finished testing: 55.00000000000001 %
+epoch: 410, loss = 1.652, wins per 10: 8, avg checkers diff: 8.1
+epoch: 420, loss = 11.954, wins per 10: 8, avg checkers diff: 8.3
+epoch: 430, loss = 2.022, wins per 10: 9, avg checkers diff: 12.8
+epoch: 440, loss = 2.524, wins per 10: 8, avg checkers diff: 7.8
+epoch: 450, loss = 4.598, wins per 10: 7, avg checkers diff: 6.6
+epoch: 460, loss = 7.235, wins per 10: 6, avg checkers diff: 4.0
+epoch: 470, loss = 2.470, wins per 10: 7, avg checkers diff: 7.5
+epoch: 480, loss = 3.595, wins per 10: 6, avg checkers diff: 5.0
+epoch: 490, loss = 2.521, wins per 10: 9, avg checkers diff: 10.9
+epoch: 500, loss = 7.774, wins per 100: 77, avg checkers diff: 8.09
+epoch: 510, loss = 4.349, wins per 10: 9, avg checkers diff: 10.1
+epoch: 520, loss = 9.455, wins per 10: 10, avg checkers diff: 11.3
+epoch: 530, loss = 7.248, wins per 10: 8, avg checkers diff: 9.7
+epoch: 540, loss = 11.518, wins per 10: 8, avg checkers diff: 7.0
+epoch: 550, loss = 19.459, wins per 10: 7, avg checkers diff: 7.3
+epoch: 560, loss = 14.055, wins per 10: 7, avg checkers diff: 6.5
+epoch: 570, loss = 23.870, wins per 10: 7, avg checkers diff: 6.6
+epoch: 580, loss = 21.077, wins per 10: 7, avg checkers diff: 5.2
+epoch: 590, loss = 18.347, wins per 10: 7, avg checkers diff: 5.9
+epoch: 600, loss = 15.156, wins per 100: 79, avg checkers diff: 8.08
+finished testing: 86.0 %
+epoch: 610, loss = 13.445, wins per 10: 9, avg checkers diff: 11.5
+epoch: 620, loss = 53.456, wins per 10: 10, avg checkers diff: 8.8
+epoch: 630, loss = 28.129, wins per 10: 9, avg checkers diff: 12.3
+epoch: 640, loss = 15.273, wins per 10: 9, avg checkers diff: 12.2
+epoch: 650, loss = 16.914, wins per 10: 7, avg checkers diff: 4.0
+epoch: 660, loss = 65.637, wins per 10: 10, avg checkers diff: 12.7
+epoch: 670, loss = 17.864, wins per 10: 8, avg checkers diff: 9.5
+epoch: 680, loss = 35.229, wins per 10: 7, avg checkers diff: 6.3
+epoch: 690, loss = 38.185, wins per 10: 9, avg checkers diff: 10.7
+epoch: 700, loss = 70.449, wins per 100: 87, avg checkers diff: 9.97
+epoch: 710, loss = 71.880, wins per 10: 8, avg checkers diff: 8.0
+epoch: 720, loss = 101.803, wins per 10: 9, avg checkers diff: 9.9
+epoch: 730, loss = 81.413, wins per 10: 10, avg checkers diff: 13.7
+epoch: 740, loss = 105.452, wins per 10: 8, avg checkers diff: 8.7
+epoch: 750, loss = 61.225, wins per 10: 8, avg checkers diff: 7.2
+epoch: 760, loss = 101.270, wins per 10: 8, avg checkers diff: 8.1
+epoch: 770, loss = 30.826, wins per 10: 7, avg checkers diff: 6.4
+epoch: 780, loss = 187.693, wins per 10: 9, avg checkers diff: 11.8
+epoch: 790, loss = 108.114, wins per 10: 9, avg checkers diff: 12.8
+epoch: 800, loss = 63.000, wins per 100: 82, avg checkers diff: 9.05
+finished testing: 86.0 %
+epoch: 810, loss = 76.616, wins per 10: 10, avg checkers diff: 14.7
+epoch: 820, loss = 51.142, wins per 10: 10, avg checkers diff: 13.7
+epoch: 830, loss = 132.272, wins per 10: 10, avg checkers diff: 10.9
+epoch: 840, loss = 80.404, wins per 10: 7, avg checkers diff: 5.4
+epoch: 850, loss = 53.112, wins per 10: 10, avg checkers diff: 11.7
+epoch: 860, loss = 77.291, wins per 10: 8, avg checkers diff: 8.8
+epoch: 870, loss = 116.788, wins per 10: 9, avg checkers diff: 9.3
+epoch: 880, loss = 49.223, wins per 10: 6, avg checkers diff: 4.9
+epoch: 890, loss = 109.899, wins per 10: 8, avg checkers diff: 9.9
+epoch: 900, loss = 63.977, wins per 100: 85, avg checkers diff: 9.71
+epoch: 910, loss = 64.264, wins per 10: 10, avg checkers diff: 12.7
+epoch: 920, loss = 127.084, wins per 10: 9, avg checkers diff: 12.4
+epoch: 930, loss = 136.139, wins per 10: 10, avg checkers diff: 12.2
+epoch: 940, loss = 86.272, wins per 10: 9, avg checkers diff: 11.3
+epoch: 950, loss = 160.236, wins per 10: 9, avg checkers diff: 10.7
+epoch: 960, loss = 188.779, wins per 10: 9, avg checkers diff: 11.2
+epoch: 970, loss = 44.277, wins per 10: 8, avg checkers diff: 6.7
+epoch: 980, loss = 146.591, wins per 10: 8, avg checkers diff: 8.4
+epoch: 990, loss = 92.489, wins per 10: 7, avg checkers diff: 7.3
+epoch: 1000, loss = 104.435, wins per 100: 87, avg checkers diff: 10.28
+finished testing: 82.0 %
+saved checkpoint
+epoch: 1010, loss = 98.245, wins per 10: 8, avg checkers diff: 7.5
+epoch: 1020, loss = 49.154, wins per 10: 9, avg checkers diff: 11.3
+epoch: 1030, loss = 86.246, wins per 10: 9, avg checkers diff: 10.9
+epoch: 1040, loss = 164.198, wins per 10: 8, avg checkers diff: 7.9
+epoch: 1050, loss = 88.038, wins per 10: 10, avg checkers diff: 12.7
+epoch: 1060, loss = 110.122, wins per 10: 9, avg checkers diff: 11.9
+epoch: 1070, loss = 148.234, wins per 10: 9, avg checkers diff: 12.2
+epoch: 1080, loss = 143.432, wins per 10: 9, avg checkers diff: 10.3
+epoch: 1090, loss = 125.289, wins per 10: 8, avg checkers diff: 8.6
+epoch: 1100, loss = 182.622, wins per 100: 87, avg checkers diff: 10.17
+epoch: 1110, loss = 346.116, wins per 10: 10, avg checkers diff: 12.9
+epoch: 1120, loss = 197.130, wins per 10: 8, avg checkers diff: 8.2
+epoch: 1130, loss = 308.265, wins per 10: 8, avg checkers diff: 10.8
+epoch: 1140, loss = 362.061, wins per 10: 9, avg checkers diff: 12.2
+epoch: 1150, loss = 253.783, wins per 10: 8, avg checkers diff: 7.4
+epoch: 1160, loss = 174.980, wins per 10: 8, avg checkers diff: 9.3
+epoch: 1170, loss = 144.561, wins per 10: 10, avg checkers diff: 13.2
+epoch: 1180, loss = 131.577, wins per 10: 9, avg checkers diff: 10.6
+epoch: 1190, loss = 224.044, wins per 10: 8, avg checkers diff: 8.2
+epoch: 1200, loss = 154.994, wins per 100: 87, avg checkers diff: 10.37
+finished testing: 72.0 %
+epoch: 1210, loss = 289.946, wins per 10: 10, avg checkers diff: 11.6
+epoch: 1220, loss = 226.150, wins per 10: 7, avg checkers diff: 6.4
+epoch: 1230, loss = 136.091, wins per 10: 8, avg checkers diff: 9.1
+epoch: 1240, loss = 345.784, wins per 10: 8, avg checkers diff: 8.7
+epoch: 1250, loss = 295.304, wins per 10: 10, avg checkers diff: 12.6
+epoch: 1260, loss = 256.846, wins per 10: 8, avg checkers diff: 8.9
+epoch: 1270, loss = 187.026, wins per 10: 7, avg checkers diff: 5.6
+epoch: 1280, loss = 268.886, wins per 10: 8, avg checkers diff: 8.1
+epoch: 1290, loss = 154.128, wins per 10: 10, avg checkers diff: 13.7
+epoch: 1300, loss = 526.359, wins per 100: 85, avg checkers diff: 9.51
+epoch: 1310, loss = 467.809, wins per 10: 8, avg checkers diff: 6.6
+epoch: 1320, loss = 140.044, wins per 10: 8, avg checkers diff: 7.3
+epoch: 1330, loss = 480.840, wins per 10: 8, avg checkers diff: 9.4
+epoch: 1340, loss = 417.213, wins per 10: 7, avg checkers diff: 3.1
+epoch: 1350, loss = 512.258, wins per 10: 8, avg checkers diff: 7.2
+epoch: 1360, loss = 181.922, wins per 10: 8, avg checkers diff: 7.5
+epoch: 1370, loss = 187.631, wins per 10: 8, avg checkers diff: 8.4
+epoch: 1380, loss = 492.894, wins per 10: 10, avg checkers diff: 14.2
+epoch: 1390, loss = 443.609, wins per 10: 10, avg checkers diff: 13.5
+epoch: 1400, loss = 304.826, wins per 100: 84, avg checkers diff: 8.76
+finished testing: 76.0 %
+epoch: 1410, loss = 383.573, wins per 10: 7, avg checkers diff: 5.4
+epoch: 1420, loss = 151.023, wins per 10: 6, avg checkers diff: 4.5
+epoch: 1430, loss = 303.352, wins per 10: 6, avg checkers diff: 3.4
+epoch: 1440, loss = 299.546, wins per 10: 9, avg checkers diff: 10.0
+epoch: 1450, loss = 174.701, wins per 10: 8, avg checkers diff: 10.2
+epoch: 1460, loss = 242.215, wins per 10: 8, avg checkers diff: 8.6
+epoch: 1470, loss = 316.931, wins per 10: 6, avg checkers diff: 6.0
+epoch: 1480, loss = 459.271, wins per 10: 8, avg checkers diff: 6.5
+epoch: 1490, loss = 437.029, wins per 10: 7, avg checkers diff: 7.1
+epoch: 1500, loss = 247.641, wins per 100: 75, avg checkers diff: 7.63
+epoch: 1510, loss = 501.571, wins per 10: 6, avg checkers diff: 5.7
+epoch: 1520, loss = 675.917, wins per 10: 9, avg checkers diff: 11.7
+epoch: 1530, loss = 269.438, wins per 10: 9, avg checkers diff: 10.2
+epoch: 1540, loss = 320.155, wins per 10: 10, avg checkers diff: 12.0
+epoch: 1550, loss = 295.451, wins per 10: 9, avg checkers diff: 10.5
+epoch: 1560, loss = 519.528, wins per 10: 9, avg checkers diff: 9.4
+epoch: 1570, loss = 289.551, wins per 10: 8, avg checkers diff: 10.3
+epoch: 1580, loss = 630.943, wins per 10: 8, avg checkers diff: 7.5
+epoch: 1590, loss = 287.101, wins per 10: 8, avg checkers diff: 9.9
+epoch: 1600, loss = 407.897, wins per 100: 83, avg checkers diff: 9.4
+finished testing: 79.0 %
+epoch: 1610, loss = 449.621, wins per 10: 10, avg checkers diff: 11.8
+epoch: 1620, loss = 309.445, wins per 10: 6, avg checkers diff: 3.3
+epoch: 1630, loss = 243.613, wins per 10: 10, avg checkers diff: 11.9
+epoch: 1640, loss = 474.198, wins per 10: 9, avg checkers diff: 10.1
+epoch: 1650, loss = 550.044, wins per 10: 8, avg checkers diff: 9.3
+epoch: 1660, loss = 486.250, wins per 10: 8, avg checkers diff: 8.3
+epoch: 1670, loss = 2163.360, wins per 10: 7, avg checkers diff: 8.8
+epoch: 1680, loss = 334.762, wins per 10: 9, avg checkers diff: 8.4
+epoch: 1690, loss = 597.766, wins per 10: 6, avg checkers diff: 4.1
+epoch: 1700, loss = 143.593, wins per 100: 82, avg checkers diff: 8.59
+epoch: 1710, loss = 261.501, wins per 10: 9, avg checkers diff: 11.0
+epoch: 1720, loss = 716.975, wins per 10: 8, avg checkers diff: 9.4
+epoch: 1730, loss = 721.750, wins per 10: 9, avg checkers diff: 12.4
+epoch: 1740, loss = 462.679, wins per 10: 8, avg checkers diff: 9.2
+epoch: 1750, loss = 687.903, wins per 10: 9, avg checkers diff: 12.8
+epoch: 1760, loss = 644.607, wins per 10: 10, avg checkers diff: 10.6
+epoch: 1770, loss = 391.706, wins per 10: 8, avg checkers diff: 8.1
+epoch: 1780, loss = 967.794, wins per 10: 9, avg checkers diff: 9.4
+epoch: 1790, loss = 700.367, wins per 10: 9, avg checkers diff: 10.5
+epoch: 1800, loss = 590.276, wins per 100: 86, avg checkers diff: 10.02
+finished testing: 81.0 %
+epoch: 1810, loss = 556.964, wins per 10: 9, avg checkers diff: 10.6
+epoch: 1820, loss = 1120.777, wins per 10: 8, avg checkers diff: 10.6
+epoch: 1830, loss = 551.169, wins per 10: 8, avg checkers diff: 9.6
+epoch: 1840, loss = 811.056, wins per 10: 10, avg checkers diff: 14.1
+epoch: 1850, loss = 783.913, wins per 10: 9, avg checkers diff: 10.8
+epoch: 1860, loss = 200.051, wins per 10: 10, avg checkers diff: 13.5
+epoch: 1870, loss = 882.024, wins per 10: 7, avg checkers diff: 7.3
+epoch: 1880, loss = 522.680, wins per 10: 6, avg checkers diff: 3.5
+epoch: 1890, loss = 331.460, wins per 10: 9, avg checkers diff: 10.0
+epoch: 1900, loss = 920.582, wins per 100: 84, avg checkers diff: 9.72
+epoch: 1910, loss = 482.317, wins per 10: 9, avg checkers diff: 10.3
+epoch: 1920, loss = 370.603, wins per 10: 8, avg checkers diff: 7.5
+epoch: 1930, loss = 1940.135, wins per 10: 9, avg checkers diff: 13.2
+epoch: 1940, loss = 594.329, wins per 10: 9, avg checkers diff: 10.6
+epoch: 1950, loss = 1041.797, wins per 10: 9, avg checkers diff: 8.0
+epoch: 1960, loss = 1151.348, wins per 10: 10, avg checkers diff: 12.2
+epoch: 1970, loss = 793.455, wins per 10: 5, avg checkers diff: 3.1
+epoch: 1980, loss = 995.946, wins per 10: 8, avg checkers diff: 8.7
+epoch: 1990, loss = 957.085, wins per 10: 8, avg checkers diff: 11.0
+epoch: 2000, loss = 536.554, wins per 100: 82, avg checkers diff: 8.89
+finished testing: 80.0 %
+saved checkpoint
+epoch: 2010, loss = 1195.424, wins per 10: 8, avg checkers diff: 6.2
+epoch: 2020, loss = 1120.293, wins per 10: 9, avg checkers diff: 11.5
+epoch: 2030, loss = 735.599, wins per 10: 8, avg checkers diff: 9.9
+epoch: 2040, loss = 1723.979, wins per 10: 9, avg checkers diff: 10.0
+epoch: 2050, loss = 759.636, wins per 10: 8, avg checkers diff: 8.7
+epoch: 2060, loss = 656.415, wins per 10: 5, avg checkers diff: 0.2
+epoch: 2070, loss = 714.788, wins per 10: 7, avg checkers diff: 4.7
+epoch: 2080, loss = 741.691, wins per 10: 9, avg checkers diff: 9.7
+epoch: 2090, loss = 954.578, wins per 10: 9, avg checkers diff: 9.0
+epoch: 2100, loss = 2129.760, wins per 100: 81, avg checkers diff: 7.9
+epoch: 2110, loss = 504.353, wins per 10: 8, avg checkers diff: 6.6
+epoch: 2120, loss = 849.117, wins per 10: 9, avg checkers diff: 11.7
+epoch: 2130, loss = 701.530, wins per 10: 9, avg checkers diff: 10.6
+epoch: 2140, loss = 522.807, wins per 10: 8, avg checkers diff: 7.7
+epoch: 2150, loss = 936.636, wins per 10: 9, avg checkers diff: 8.7
+epoch: 2160, loss = 386.412, wins per 10: 10, avg checkers diff: 11.8
+epoch: 2170, loss = 947.366, wins per 10: 10, avg checkers diff: 9.1
+epoch: 2180, loss = 1901.797, wins per 10: 9, avg checkers diff: 9.9
+epoch: 2190, loss = 409.678, wins per 10: 7, avg checkers diff: 6.5
+epoch: 2200, loss = 1748.169, wins per 100: 85, avg checkers diff: 8.57
+finished testing: 82.0 %
+epoch: 2210, loss = 1202.996, wins per 10: 9, avg checkers diff: 10.0
+epoch: 2220, loss = 3939.865, wins per 10: 8, avg checkers diff: 7.7
+epoch: 2230, loss = 886.542, wins per 10: 7, avg checkers diff: 4.3
+epoch: 2240, loss = 1541.357, wins per 10: 8, avg checkers diff: 7.4
+epoch: 2250, loss = 619.286, wins per 10: 9, avg checkers diff: 13.4
+epoch: 2260, loss = 2292.811, wins per 10: 9, avg checkers diff: 12.5
+epoch: 2270, loss = 710.729, wins per 10: 8, avg checkers diff: 10.1
+epoch: 2280, loss = 2167.908, wins per 10: 9, avg checkers diff: 11.4
+epoch: 2290, loss = 1925.484, wins per 10: 8, avg checkers diff: 7.5
+epoch: 2300, loss = 1453.849, wins per 100: 83, avg checkers diff: 9.23
+epoch: 2310, loss = 1480.691, wins per 10: 7, avg checkers diff: 4.6
+epoch: 2320, loss = 2701.000, wins per 10: 8, avg checkers diff: 10.2
+epoch: 2330, loss = 1483.720, wins per 10: 4, avg checkers diff: -0.8
+epoch: 2340, loss = 1685.148, wins per 10: 8, avg checkers diff: 9.2
+epoch: 2350, loss = 1708.037, wins per 10: 9, avg checkers diff: 9.1
+epoch: 2360, loss = 754.525, wins per 10: 8, avg checkers diff: 8.9
+epoch: 2370, loss = 2275.466, wins per 10: 10, avg checkers diff: 11.2
+epoch: 2380, loss = 728.946, wins per 10: 9, avg checkers diff: 9.1
+epoch: 2390, loss = 3352.683, wins per 10: 10, avg checkers diff: 13.3
+epoch: 2400, loss = 1201.048, wins per 100: 78, avg checkers diff: 7.72
+finished testing: 75.0 %
+epoch: 2410, loss = 1073.134, wins per 10: 8, avg checkers diff: 8.2
+epoch: 2420, loss = 879.409, wins per 10: 9, avg checkers diff: 12.5
+epoch: 2430, loss = 2065.987, wins per 10: 7, avg checkers diff: 7.4
+epoch: 2440, loss = 394.443, wins per 10: 8, avg checkers diff: 7.7
+epoch: 2450, loss = 1188.469, wins per 10: 10, avg checkers diff: 12.0
+epoch: 2460, loss = 2280.865, wins per 10: 9, avg checkers diff: 9.9
+epoch: 2470, loss = 1403.918, wins per 10: 9, avg checkers diff: 9.4
+epoch: 2480, loss = 1997.226, wins per 10: 7, avg checkers diff: 6.8
+epoch: 2490, loss = 2639.478, wins per 10: 7, avg checkers diff: 5.6
+epoch: 2500, loss = 1365.893, wins per 100: 83, avg checkers diff: 8.97
+epoch: 2510, loss = 1648.233, wins per 10: 9, avg checkers diff: 10.0
+epoch: 2520, loss = 1947.573, wins per 10: 9, avg checkers diff: 11.9
+epoch: 2530, loss = 1072.230, wins per 10: 6, avg checkers diff: 6.0
+epoch: 2540, loss = 1107.295, wins per 10: 9, avg checkers diff: 10.7
+epoch: 2550, loss = 1787.434, wins per 10: 7, avg checkers diff: 2.4
+epoch: 2560, loss = 1411.991, wins per 10: 8, avg checkers diff: 10.0
+epoch: 2570, loss = 3245.360, wins per 10: 9, avg checkers diff: 9.7
+epoch: 2580, loss = 1080.272, wins per 10: 3, avg checkers diff: -3.6
+epoch: 2590, loss = 1904.375, wins per 10: 7, avg checkers diff: 6.2
+epoch: 2600, loss = 2275.730, wins per 100: 76, avg checkers diff: 7.34
+finished testing: 75.0 %
+epoch: 2610, loss = 2170.578, wins per 10: 7, avg checkers diff: 6.2
+epoch: 2620, loss = 1622.774, wins per 10: 8, avg checkers diff: 8.4
+epoch: 2630, loss = 4000.269, wins per 10: 9, avg checkers diff: 11.2
+epoch: 2640, loss = 5242.795, wins per 10: 7, avg checkers diff: 7.9
+epoch: 2650, loss = 1986.153, wins per 10: 6, avg checkers diff: 0.8
+epoch: 2660, loss = 3908.344, wins per 10: 9, avg checkers diff: 10.3
+epoch: 2670, loss = 2926.819, wins per 10: 6, avg checkers diff: 2.4
+epoch: 2680, loss = 5192.374, wins per 10: 8, avg checkers diff: 9.0
+epoch: 2690, loss = 2137.140, wins per 10: 9, avg checkers diff: 9.9
+epoch: 2700, loss = 4807.350, wins per 100: 78, avg checkers diff: 7.6
+epoch: 2710, loss = 1819.157, wins per 10: 9, avg checkers diff: 11.7
+epoch: 2720, loss = 1106.976, wins per 10: 9, avg checkers diff: 8.1
+epoch: 2730, loss = 2038.477, wins per 10: 6, avg checkers diff: 2.4
+epoch: 2740, loss = 4054.962, wins per 10: 5, avg checkers diff: 2.8
+epoch: 2750, loss = 2693.822, wins per 10: 6, avg checkers diff: 3.3
+epoch: 2760, loss = 1059.514, wins per 10: 9, avg checkers diff: 7.6
+epoch: 2770, loss = 2577.493, wins per 10: 8, avg checkers diff: 7.5
+epoch: 2780, loss = 3009.787, wins per 10: 7, avg checkers diff: 5.9
+epoch: 2790, loss = 2169.943, wins per 10: 8, avg checkers diff: 5.4
+epoch: 2800, loss = 2416.692, wins per 100: 74, avg checkers diff: 5.88
+finished testing: 80.0 %
+epoch: 2810, loss = 7493.633, wins per 10: 9, avg checkers diff: 12.3
+epoch: 2820, loss = 1490.814, wins per 10: 7, avg checkers diff: 6.0
+epoch: 2830, loss = 3281.823, wins per 10: 5, avg checkers diff: 2.2
+epoch: 2840, loss = 2526.800, wins per 10: 9, avg checkers diff: 8.9
+epoch: 2850, loss = 2859.059, wins per 10: 8, avg checkers diff: 6.5
+epoch: 2860, loss = 1768.688, wins per 10: 10, avg checkers diff: 9.3
+epoch: 2870, loss = 1787.031, wins per 10: 6, avg checkers diff: 2.0
+epoch: 2880, loss = 2654.366, wins per 10: 8, avg checkers diff: 10.3
+epoch: 2890, loss = 2440.863, wins per 10: 8, avg checkers diff: 6.8
+epoch: 2900, loss = 2029.488, wins per 100: 80, avg checkers diff: 7.9
+epoch: 2910, loss = 5411.040, wins per 10: 7, avg checkers diff: 4.7
+epoch: 2920, loss = 4117.361, wins per 10: 9, avg checkers diff: 9.0
+epoch: 2930, loss = 6149.062, wins per 10: 8, avg checkers diff: 9.8
+epoch: 2940, loss = 3174.634, wins per 10: 8, avg checkers diff: 10.3
+epoch: 2950, loss = 15415.898, wins per 10: 6, avg checkers diff: 0.2
+epoch: 2960, loss = 4279.788, wins per 10: 7, avg checkers diff: 3.5
+epoch: 2970, loss = 3199.446, wins per 10: 9, avg checkers diff: 8.0
+epoch: 2980, loss = 8361.195, wins per 10: 9, avg checkers diff: 8.8
+epoch: 2990, loss = 2611.670, wins per 10: 8, avg checkers diff: 9.0
+epoch: 3000, loss = 2364.879, wins per 100: 81, avg checkers diff: 7.7
+finished testing: 71.0 %
+saved checkpoint
+epoch: 3010, loss = 2662.095, wins per 10: 8, avg checkers diff: 8.4
+epoch: 3020, loss = 5164.330, wins per 10: 9, avg checkers diff: 10.8
+epoch: 3030, loss = 2940.972, wins per 10: 8, avg checkers diff: 9.4
+epoch: 3040, loss = 5189.475, wins per 10: 9, avg checkers diff: 10.0
+epoch: 3050, loss = 2838.475, wins per 10: 4, avg checkers diff: 1.5
+epoch: 3060, loss = 7007.925, wins per 10: 7, avg checkers diff: 7.6
+epoch: 3070, loss = 1689.097, wins per 10: 10, avg checkers diff: 10.6
+epoch: 3080, loss = 4088.469, wins per 10: 6, avg checkers diff: 2.2
+epoch: 3090, loss = 3404.444, wins per 10: 9, avg checkers diff: 10.1
+epoch: 3100, loss = 1699.265, wins per 100: 78, avg checkers diff: 8.11
+epoch: 3110, loss = 3136.895, wins per 10: 7, avg checkers diff: 6.3
+epoch: 3120, loss = 4729.247, wins per 10: 10, avg checkers diff: 10.2
+epoch: 3130, loss = 1623.609, wins per 10: 6, avg checkers diff: 4.8
+epoch: 3140, loss = 4309.280, wins per 10: 7, avg checkers diff: 2.8
+epoch: 3150, loss = 2559.358, wins per 10: 8, avg checkers diff: 8.8
+epoch: 3160, loss = 4936.395, wins per 10: 9, avg checkers diff: 11.0
+epoch: 3170, loss = 2431.365, wins per 10: 8, avg checkers diff: 7.1
+epoch: 3180, loss = 1988.356, wins per 10: 7, avg checkers diff: 7.0
+epoch: 3190, loss = 2902.205, wins per 10: 10, avg checkers diff: 13.7
+epoch: 3200, loss = 2258.966, wins per 100: 81, avg checkers diff: 8.13
+finished testing: 76.0 %
+epoch: 3210, loss = 1655.348, wins per 10: 9, avg checkers diff: 9.1
+epoch: 3220, loss = 3433.151, wins per 10: 6, avg checkers diff: 5.6
+epoch: 3230, loss = 8355.061, wins per 10: 8, avg checkers diff: 7.6
+epoch: 3240, loss = 964.355, wins per 10: 6, avg checkers diff: 1.8
+epoch: 3250, loss = 2512.046, wins per 10: 8, avg checkers diff: 8.6
+epoch: 3260, loss = 2075.140, wins per 10: 7, avg checkers diff: 6.4
+epoch: 3270, loss = 3533.200, wins per 10: 8, avg checkers diff: 7.7
+epoch: 3280, loss = 4277.010, wins per 10: 6, avg checkers diff: 3.4
+epoch: 3290, loss = 3341.339, wins per 10: 7, avg checkers diff: 5.5
+epoch: 3300, loss = 1608.208, wins per 100: 72, avg checkers diff: 6.19
+epoch: 3310, loss = 1077.931, wins per 10: 8, avg checkers diff: 8.1
+epoch: 3320, loss = 1463.186, wins per 10: 9, avg checkers diff: 9.5
+epoch: 3330, loss = 3256.173, wins per 10: 7, avg checkers diff: 7.3
+epoch: 3340, loss = 3663.916, wins per 10: 6, avg checkers diff: 1.4
+epoch: 3350, loss = 1770.083, wins per 10: 8, avg checkers diff: 6.7
+epoch: 3360, loss = 1885.712, wins per 10: 7, avg checkers diff: 5.6
+epoch: 3370, loss = 2096.177, wins per 10: 8, avg checkers diff: 6.2
+epoch: 3380, loss = 1277.044, wins per 10: 7, avg checkers diff: 6.5
+epoch: 3390, loss = 1919.054, wins per 10: 9, avg checkers diff: 11.3
+epoch: 3400, loss = 2745.256, wins per 100: 74, avg checkers diff: 6.37
+finished testing: 81.0 %
+epoch: 3410, loss = 5153.898, wins per 10: 7, avg checkers diff: 8.1
+epoch: 3420, loss = 2643.908, wins per 10: 9, avg checkers diff: 12.0
+epoch: 3430, loss = 3399.152, wins per 10: 9, avg checkers diff: 8.8
+epoch: 3440, loss = 1979.393, wins per 10: 8, avg checkers diff: 7.4
+epoch: 3450, loss = 2934.258, wins per 10: 9, avg checkers diff: 10.9
+epoch: 3460, loss = 4303.023, wins per 10: 7, avg checkers diff: 5.2
+epoch: 3470, loss = 3359.511, wins per 10: 6, avg checkers diff: 4.8
+epoch: 3480, loss = 5487.781, wins per 10: 9, avg checkers diff: 9.6
+epoch: 3490, loss = 7259.362, wins per 10: 7, avg checkers diff: 6.9
+epoch: 3500, loss = 2061.123, wins per 100: 77, avg checkers diff: 7.69
+epoch: 3510, loss = 4361.482, wins per 10: 9, avg checkers diff: 10.0
+epoch: 3520, loss = 2605.335, wins per 10: 8, avg checkers diff: 9.1
+epoch: 3530, loss = 7288.793, wins per 10: 10, avg checkers diff: 12.0
+epoch: 3540, loss = 7590.497, wins per 10: 8, avg checkers diff: 7.7
+epoch: 3550, loss = 3140.056, wins per 10: 9, avg checkers diff: 12.9
+epoch: 3560, loss = 1111.249, wins per 10: 7, avg checkers diff: 4.7
+epoch: 3570, loss = 2731.894, wins per 10: 7, avg checkers diff: 5.5
+epoch: 3580, loss = 3471.680, wins per 10: 8, avg checkers diff: 7.4
+epoch: 3590, loss = 2019.084, wins per 10: 9, avg checkers diff: 9.7
+epoch: 3600, loss = 2456.483, wins per 100: 82, avg checkers diff: 8.33
+finished testing: 78.0 %
+epoch: 3610, loss = 3123.648, wins per 10: 10, avg checkers diff: 12.9
+epoch: 3620, loss = 947.424, wins per 10: 10, avg checkers diff: 10.9
+epoch: 3630, loss = 4280.304, wins per 10: 8, avg checkers diff: 8.7
+epoch: 3640, loss = 2568.013, wins per 10: 9, avg checkers diff: 7.3
+epoch: 3650, loss = 3811.388, wins per 10: 6, avg checkers diff: 5.8
+epoch: 3660, loss = 3272.192, wins per 10: 8, avg checkers diff: 10.5
+epoch: 3670, loss = 2638.245, wins per 10: 7, avg checkers diff: 4.4
+epoch: 3680, loss = 1853.306, wins per 10: 5, avg checkers diff: 2.6
+epoch: 3690, loss = 2429.802, wins per 10: 6, avg checkers diff: 4.5
+epoch: 3700, loss = 2909.938, wins per 100: 74, avg checkers diff: 7.02
+epoch: 3710, loss = 12317.669, wins per 10: 9, avg checkers diff: 12.1
+epoch: 3720, loss = 1724.649, wins per 10: 5, avg checkers diff: 0.2
+epoch: 3730, loss = 2741.822, wins per 10: 7, avg checkers diff: 3.7
+epoch: 3740, loss = 7156.920, wins per 10: 5, avg checkers diff: 4.6
+epoch: 3750, loss = 1997.312, wins per 10: 7, avg checkers diff: 4.1
+epoch: 3760, loss = 5565.417, wins per 10: 10, avg checkers diff: 12.8
+epoch: 3770, loss = 3369.219, wins per 10: 8, avg checkers diff: 7.6
+epoch: 3780, loss = 6583.528, wins per 10: 8, avg checkers diff: 8.1
+epoch: 3790, loss = 4976.981, wins per 10: 8, avg checkers diff: 10.3
+epoch: 3800, loss = 8739.948, wins per 100: 71, avg checkers diff: 6.3
+finished testing: 72.0 %
+epoch: 3810, loss = 4926.460, wins per 10: 10, avg checkers diff: 10.2
+epoch: 3820, loss = 5027.766, wins per 10: 5, avg checkers diff: 3.3
+epoch: 3830, loss = 5049.772, wins per 10: 10, avg checkers diff: 11.2
+epoch: 3840, loss = 1891.250, wins per 10: 9, avg checkers diff: 10.2
+epoch: 3850, loss = 3958.042, wins per 10: 8, avg checkers diff: 9.9
+epoch: 3860, loss = 2390.789, wins per 10: 7, avg checkers diff: 6.3
+epoch: 3870, loss = 7002.720, wins per 10: 7, avg checkers diff: 6.7
+epoch: 3880, loss = 8030.730, wins per 10: 10, avg checkers diff: 12.6
+epoch: 3890, loss = 4868.171, wins per 10: 9, avg checkers diff: 9.7
+epoch: 3900, loss = 6509.969, wins per 100: 83, avg checkers diff: 8.74
+epoch: 3910, loss = 26959.414, wins per 10: 6, avg checkers diff: 4.0
+epoch: 3920, loss = 4064.933, wins per 10: 8, avg checkers diff: 4.0
+epoch: 3930, loss = 5663.700, wins per 10: 8, avg checkers diff: 8.6
+epoch: 3940, loss = 3290.314, wins per 10: 5, avg checkers diff: 1.7
+epoch: 3950, loss = 15601.705, wins per 10: 9, avg checkers diff: 9.0
+epoch: 3960, loss = 4479.668, wins per 10: 8, avg checkers diff: 7.3
+epoch: 3970, loss = 5816.657, wins per 10: 8, avg checkers diff: 6.6
+epoch: 3980, loss = 9055.374, wins per 10: 8, avg checkers diff: 6.7
+epoch: 3990, loss = 7464.585, wins per 10: 8, avg checkers diff: 8.9
+epoch: 4000, loss = 3149.696, wins per 100: 75, avg checkers diff: 6.34
+finished testing: 77.0 %
+saved checkpoint
+epoch: 4010, loss = 8240.432, wins per 10: 9, avg checkers diff: 8.3
+epoch: 4020, loss = 3847.869, wins per 10: 8, avg checkers diff: 8.8
+epoch: 4030, loss = 2869.332, wins per 10: 8, avg checkers diff: 5.2
+epoch: 4040, loss = 4611.400, wins per 10: 7, avg checkers diff: 5.9
+epoch: 4050, loss = 4309.438, wins per 10: 8, avg checkers diff: 10.5
+epoch: 4060, loss = 10792.165, wins per 10: 6, avg checkers diff: 4.6
+epoch: 4070, loss = 8422.751, wins per 10: 8, avg checkers diff: 6.4
+epoch: 4080, loss = 6930.386, wins per 10: 7, avg checkers diff: 7.8
+epoch: 4090, loss = 5559.527, wins per 10: 6, avg checkers diff: 4.4
+epoch: 4100, loss = 1404.061, wins per 100: 77, avg checkers diff: 7.37
+epoch: 4110, loss = 8570.343, wins per 10: 9, avg checkers diff: 11.2
+epoch: 4120, loss = 5066.488, wins per 10: 7, avg checkers diff: 5.8
+epoch: 4130, loss = 31939.660, wins per 10: 9, avg checkers diff: 9.0
+epoch: 4140, loss = 12212.976, wins per 10: 9, avg checkers diff: 8.4
+epoch: 4150, loss = 6413.214, wins per 10: 8, avg checkers diff: 7.3
+epoch: 4160, loss = 3788.582, wins per 10: 6, avg checkers diff: 4.8
+epoch: 4170, loss = 3622.141, wins per 10: 9, avg checkers diff: 8.2
+epoch: 4180, loss = 5328.990, wins per 10: 6, avg checkers diff: 4.5
+epoch: 4190, loss = 16734.533, wins per 10: 6, avg checkers diff: 5.0
+epoch: 4200, loss = 17238.797, wins per 100: 76, avg checkers diff: 6.96
+finished testing: 83.0 %
+epoch: 4210, loss = 3937.241, wins per 10: 9, avg checkers diff: 11.3
+epoch: 4220, loss = 4376.300, wins per 10: 9, avg checkers diff: 6.7
+epoch: 4230, loss = 14591.367, wins per 10: 8, avg checkers diff: 9.9
+epoch: 4240, loss = 14091.459, wins per 10: 9, avg checkers diff: 11.9
+epoch: 4250, loss = 20579.494, wins per 10: 10, avg checkers diff: 12.2
+epoch: 4260, loss = 10795.035, wins per 10: 8, avg checkers diff: 6.6
+epoch: 4270, loss = 19371.768, wins per 10: 10, avg checkers diff: 10.5
+epoch: 4280, loss = 9867.616, wins per 10: 9, avg checkers diff: 8.5
+epoch: 4290, loss = 4339.343, wins per 10: 9, avg checkers diff: 10.8
+epoch: 4300, loss = 5627.052, wins per 100: 91, avg checkers diff: 9.75
+epoch: 4310, loss = 6468.967, wins per 10: 7, avg checkers diff: 6.7
+epoch: 4320, loss = 6690.637, wins per 10: 8, avg checkers diff: 8.3
+epoch: 4330, loss = 11595.440, wins per 10: 9, avg checkers diff: 8.8
+epoch: 4340, loss = 18579.609, wins per 10: 8, avg checkers diff: 7.2
+epoch: 4350, loss = 19202.287, wins per 10: 8, avg checkers diff: 9.0
+epoch: 4360, loss = 3288.443, wins per 10: 8, avg checkers diff: 7.3
+epoch: 4370, loss = 3761.109, wins per 10: 7, avg checkers diff: 8.6
+epoch: 4380, loss = 8764.571, wins per 10: 8, avg checkers diff: 10.0
+epoch: 4390, loss = 3680.398, wins per 10: 7, avg checkers diff: 7.4
+epoch: 4400, loss = 7477.657, wins per 100: 79, avg checkers diff: 8.14
+finished testing: 78.0 %
+epoch: 4410, loss = 6126.556, wins per 10: 8, avg checkers diff: 8.1
+epoch: 4420, loss = 14326.200, wins per 10: 9, avg checkers diff: 10.6
+epoch: 4430, loss = 6977.779, wins per 10: 8, avg checkers diff: 9.3
+epoch: 4440, loss = 7351.843, wins per 10: 8, avg checkers diff: 5.4
+epoch: 4450, loss = 5926.209, wins per 10: 8, avg checkers diff: 9.9
+epoch: 4460, loss = 15165.318, wins per 10: 8, avg checkers diff: 7.9
+epoch: 4470, loss = 6776.696, wins per 10: 8, avg checkers diff: 10.4
+epoch: 4480, loss = 4944.690, wins per 10: 7, avg checkers diff: 5.5
+epoch: 4490, loss = 5967.396, wins per 10: 9, avg checkers diff: 9.1
+epoch: 4500, loss = 10772.804, wins per 100: 80, avg checkers diff: 8.22
+epoch: 4510, loss = 5998.834, wins per 10: 7, avg checkers diff: 6.5
+epoch: 4520, loss = 4352.199, wins per 10: 9, avg checkers diff: 12.1
+epoch: 4530, loss = 13145.691, wins per 10: 8, avg checkers diff: 9.9
+epoch: 4540, loss = 9522.822, wins per 10: 9, avg checkers diff: 10.3
+epoch: 4550, loss = 6623.006, wins per 10: 8, avg checkers diff: 8.4
+epoch: 4560, loss = 10594.401, wins per 10: 7, avg checkers diff: 6.3
+epoch: 4570, loss = 9164.011, wins per 10: 6, avg checkers diff: 4.7
+epoch: 4580, loss = 16624.918, wins per 10: 8, avg checkers diff: 7.0
+epoch: 4590, loss = 45312.617, wins per 10: 9, avg checkers diff: 11.5
+epoch: 4600, loss = 18579.037, wins per 100: 78, avg checkers diff: 8.2
+finished testing: 83.0 %
+epoch: 4610, loss = 5198.818, wins per 10: 8, avg checkers diff: 10.3
+epoch: 4620, loss = 6673.240, wins per 10: 8, avg checkers diff: 4.6
+epoch: 4630, loss = 15886.248, wins per 10: 6, avg checkers diff: 2.8
+epoch: 4640, loss = 10162.786, wins per 10: 9, avg checkers diff: 10.7
+epoch: 4650, loss = 12499.569, wins per 10: 10, avg checkers diff: 12.5
+epoch: 4660, loss = 12147.889, wins per 10: 8, avg checkers diff: 7.6
+epoch: 4670, loss = 10083.792, wins per 10: 8, avg checkers diff: 9.4
+epoch: 4680, loss = 7628.006, wins per 10: 10, avg checkers diff: 13.9
+epoch: 4690, loss = 8157.410, wins per 10: 9, avg checkers diff: 11.8
+epoch: 4700, loss = 7607.823, wins per 100: 82, avg checkers diff: 8.82
+epoch: 4710, loss = 18409.928, wins per 10: 7, avg checkers diff: 6.3
+epoch: 4720, loss = 38733.555, wins per 10: 9, avg checkers diff: 11.5
+epoch: 4730, loss = 6800.231, wins per 10: 8, avg checkers diff: 7.7
+epoch: 4740, loss = 5476.117, wins per 10: 8, avg checkers diff: 6.6
+epoch: 4750, loss = 8410.725, wins per 10: 8, avg checkers diff: 10.5
+epoch: 4760, loss = 8995.117, wins per 10: 9, avg checkers diff: 10.6
+epoch: 4770, loss = 7062.180, wins per 10: 6, avg checkers diff: 3.1
+epoch: 4780, loss = 8091.631, wins per 10: 9, avg checkers diff: 8.8
+epoch: 4790, loss = 2816.546, wins per 10: 8, avg checkers diff: 9.1
+epoch: 4800, loss = 3388.250, wins per 100: 82, avg checkers diff: 8.45
+finished testing: 76.0 %
+epoch: 4810, loss = 6198.650, wins per 10: 6, avg checkers diff: 4.3
+epoch: 4820, loss = 6866.620, wins per 10: 9, avg checkers diff: 9.5
+epoch: 4830, loss = 4349.618, wins per 10: 7, avg checkers diff: 5.7
+epoch: 4840, loss = 4641.467, wins per 10: 5, avg checkers diff: 1.0
+epoch: 4850, loss = 4969.450, wins per 10: 7, avg checkers diff: 7.3
+epoch: 4860, loss = 1546.844, wins per 10: 9, avg checkers diff: 10.1
+epoch: 4870, loss = 6111.470, wins per 10: 9, avg checkers diff: 11.2
+epoch: 4880, loss = 8381.400, wins per 10: 9, avg checkers diff: 10.4
+epoch: 4890, loss = 6553.321, wins per 10: 9, avg checkers diff: 9.0
+epoch: 4900, loss = 2957.266, wins per 100: 79, avg checkers diff: 7.97
+epoch: 4910, loss = 6046.205, wins per 10: 8, avg checkers diff: 7.7
+epoch: 4920, loss = 2843.895, wins per 10: 9, avg checkers diff: 8.8
+epoch: 4930, loss = 4345.381, wins per 10: 8, avg checkers diff: 9.1
+epoch: 4940, loss = 2464.567, wins per 10: 7, avg checkers diff: 6.0
+epoch: 4950, loss = 6162.123, wins per 10: 7, avg checkers diff: 5.9
+epoch: 4960, loss = 3773.382, wins per 10: 8, avg checkers diff: 8.1
+epoch: 4970, loss = 2232.910, wins per 10: 9, avg checkers diff: 10.3
+epoch: 4980, loss = 4890.555, wins per 10: 5, avg checkers diff: 4.2
+epoch: 4990, loss = 1377.731, wins per 10: 9, avg checkers diff: 7.4
+epoch: 5000, loss = 3224.567, wins per 100: 80, avg checkers diff: 7.79
+finished testing: 81.0 %
+saved checkpoint
+epoch: 5010, loss = 3551.800, wins per 10: 9, avg checkers diff: 9.9
+epoch: 5020, loss = 4519.495, wins per 10: 9, avg checkers diff: 10.9
+epoch: 5030, loss = 4331.146, wins per 10: 8, avg checkers diff: 6.2
+epoch: 5040, loss = 2876.417, wins per 10: 7, avg checkers diff: 5.2
+epoch: 5050, loss = 2286.914, wins per 10: 8, avg checkers diff: 8.7
+epoch: 5060, loss = 2881.396, wins per 10: 7, avg checkers diff: 7.2
+epoch: 5070, loss = 16460.303, wins per 10: 8, avg checkers diff: 4.5
+epoch: 5080, loss = 3671.290, wins per 10: 9, avg checkers diff: 9.5
+epoch: 5090, loss = 2725.678, wins per 10: 10, avg checkers diff: 10.6
+epoch: 5100, loss = 3762.187, wins per 100: 84, avg checkers diff: 8.46
+epoch: 5110, loss = 11599.404, wins per 10: 9, avg checkers diff: 11.9
+epoch: 5120, loss = 2698.960, wins per 10: 8, avg checkers diff: 8.7
+epoch: 5130, loss = 1738.348, wins per 10: 10, avg checkers diff: 13.5
+epoch: 5140, loss = 6126.233, wins per 10: 10, avg checkers diff: 10.0
+epoch: 5150, loss = 3239.729, wins per 10: 8, avg checkers diff: 9.4
+epoch: 5160, loss = 2307.684, wins per 10: 10, avg checkers diff: 13.3
+epoch: 5170, loss = 1997.061, wins per 10: 9, avg checkers diff: 11.6
+epoch: 5180, loss = 2026.597, wins per 10: 6, avg checkers diff: 5.0
+epoch: 5190, loss = 3457.378, wins per 10: 7, avg checkers diff: 5.1
+epoch: 5200, loss = 1591.285, wins per 100: 85, avg checkers diff: 9.74
+finished testing: 84.0 %
+epoch: 5210, loss = 2727.660, wins per 10: 10, avg checkers diff: 13.5
+epoch: 5220, loss = 2410.267, wins per 10: 9, avg checkers diff: 12.1
+epoch: 5230, loss = 2913.736, wins per 10: 7, avg checkers diff: 7.7
+epoch: 5240, loss = 1284.526, wins per 10: 7, avg checkers diff: 5.7
+epoch: 5250, loss = 1438.181, wins per 10: 6, avg checkers diff: 3.3
+epoch: 5260, loss = 1166.768, wins per 10: 9, avg checkers diff: 12.5
+epoch: 5270, loss = 2413.938, wins per 10: 8, avg checkers diff: 10.2
+epoch: 5280, loss = 2153.307, wins per 10: 7, avg checkers diff: 5.7
+epoch: 5290, loss = 1697.918, wins per 10: 8, avg checkers diff: 7.9
+epoch: 5300, loss = 1908.872, wins per 100: 80, avg checkers diff: 9.1
+epoch: 5310, loss = 2112.390, wins per 10: 9, avg checkers diff: 11.6
+epoch: 5320, loss = 1328.559, wins per 10: 10, avg checkers diff: 13.0
+epoch: 5330, loss = 2257.192, wins per 10: 8, avg checkers diff: 8.4
+epoch: 5340, loss = 4497.511, wins per 10: 9, avg checkers diff: 8.7
+epoch: 5350, loss = 5391.434, wins per 10: 8, avg checkers diff: 10.2
+epoch: 5360, loss = 1968.039, wins per 10: 7, avg checkers diff: 4.3
+epoch: 5370, loss = 2177.453, wins per 10: 9, avg checkers diff: 9.3
+epoch: 5380, loss = 3667.770, wins per 10: 9, avg checkers diff: 11.7
+epoch: 5390, loss = 2997.615, wins per 10: 7, avg checkers diff: 6.8
+epoch: 5400, loss = 2415.367, wins per 100: 85, avg checkers diff: 9.51
+finished testing: 78.0 %
+epoch: 5410, loss = 3430.434, wins per 10: 9, avg checkers diff: 9.0
+epoch: 5420, loss = 1887.113, wins per 10: 8, avg checkers diff: 7.4
+epoch: 5430, loss = 1839.186, wins per 10: 8, avg checkers diff: 8.1
+epoch: 5440, loss = 3815.386, wins per 10: 9, avg checkers diff: 8.0
+epoch: 5450, loss = 3957.004, wins per 10: 7, avg checkers diff: 6.0
+epoch: 5460, loss = 2341.656, wins per 10: 7, avg checkers diff: 7.0
+epoch: 5470, loss = 1591.897, wins per 10: 9, avg checkers diff: 9.0
+epoch: 5480, loss = 6713.792, wins per 10: 8, avg checkers diff: 9.4
+epoch: 5490, loss = 5215.442, wins per 10: 8, avg checkers diff: 9.6
+epoch: 5500, loss = 1864.826, wins per 100: 81, avg checkers diff: 8.28
+epoch: 5510, loss = 1861.974, wins per 10: 8, avg checkers diff: 7.9
+epoch: 5520, loss = 5031.196, wins per 10: 9, avg checkers diff: 10.7
+epoch: 5530, loss = 21332.842, wins per 10: 10, avg checkers diff: 13.5
+epoch: 5540, loss = 2417.166, wins per 10: 7, avg checkers diff: 8.4
+epoch: 5550, loss = 16421.055, wins per 10: 9, avg checkers diff: 11.6
+epoch: 5560, loss = 2850.021, wins per 10: 7, avg checkers diff: 5.2
+epoch: 5570, loss = 4549.404, wins per 10: 9, avg checkers diff: 10.2
+epoch: 5580, loss = 2832.367, wins per 10: 8, avg checkers diff: 4.6
+epoch: 5590, loss = 6241.252, wins per 10: 9, avg checkers diff: 10.0
+epoch: 5600, loss = 5156.737, wins per 100: 82, avg checkers diff: 8.41
+finished testing: 81.0 %
+epoch: 5610, loss = 6657.965, wins per 10: 7, avg checkers diff: 6.4
+epoch: 5620, loss = 14931.267, wins per 10: 8, avg checkers diff: 5.7
+epoch: 5630, loss = 7986.934, wins per 10: 8, avg checkers diff: 8.9
+epoch: 5640, loss = 3990.358, wins per 10: 8, avg checkers diff: 8.1
+epoch: 5650, loss = 4855.836, wins per 10: 10, avg checkers diff: 13.0
+epoch: 5660, loss = 5950.302, wins per 10: 9, avg checkers diff: 10.7
+epoch: 5670, loss = 15885.086, wins per 10: 8, avg checkers diff: 7.8
+epoch: 5680, loss = 3479.829, wins per 10: 8, avg checkers diff: 8.0
+epoch: 5690, loss = 2602.434, wins per 10: 4, avg checkers diff: -0.2
+epoch: 5700, loss = 4034.776, wins per 100: 76, avg checkers diff: 7.13
+epoch: 5710, loss = 4470.279, wins per 10: 9, avg checkers diff: 8.5
+epoch: 5720, loss = 4047.525, wins per 10: 9, avg checkers diff: 9.2
+epoch: 5730, loss = 5757.241, wins per 10: 6, avg checkers diff: 3.7
+epoch: 5740, loss = 15099.511, wins per 10: 7, avg checkers diff: 7.5
+epoch: 5750, loss = 6396.414, wins per 10: 7, avg checkers diff: 7.8
+epoch: 5760, loss = 4758.286, wins per 10: 8, avg checkers diff: 7.3
+epoch: 5770, loss = 8827.433, wins per 10: 7, avg checkers diff: 3.6
+epoch: 5780, loss = 6295.216, wins per 10: 5, avg checkers diff: 0.7
+epoch: 5790, loss = 4147.331, wins per 10: 9, avg checkers diff: 10.3
+epoch: 5800, loss = 3054.216, wins per 100: 76, avg checkers diff: 6.76
+finished testing: 72.0 %
+epoch: 5810, loss = 6741.116, wins per 10: 8, avg checkers diff: 6.7
+epoch: 5820, loss = 15257.326, wins per 10: 7, avg checkers diff: 4.4
+epoch: 5830, loss = 30334.631, wins per 10: 7, avg checkers diff: 4.1
+epoch: 5840, loss = 13347.463, wins per 10: 4, avg checkers diff: 1.7
+epoch: 5850, loss = 4242.082, wins per 10: 7, avg checkers diff: 5.1
+epoch: 5860, loss = 33311.934, wins per 10: 8, avg checkers diff: 8.0
+epoch: 5870, loss = 2674.863, wins per 10: 7, avg checkers diff: 4.9
+epoch: 5880, loss = 4709.554, wins per 10: 6, avg checkers diff: 5.4
+epoch: 5890, loss = 7068.983, wins per 10: 10, avg checkers diff: 14.3
+epoch: 5900, loss = 7157.753, wins per 100: 69, avg checkers diff: 5.81
+epoch: 5910, loss = 11314.597, wins per 10: 7, avg checkers diff: 5.1
+epoch: 5920, loss = 9580.834, wins per 10: 9, avg checkers diff: 7.1
+epoch: 5930, loss = 15428.156, wins per 10: 6, avg checkers diff: 2.8
+epoch: 5940, loss = 8285.789, wins per 10: 8, avg checkers diff: 6.3
+epoch: 5950, loss = 6768.257, wins per 10: 5, avg checkers diff: -0.2
+epoch: 5960, loss = 7121.920, wins per 10: 5, avg checkers diff: 2.7
+epoch: 5970, loss = 9605.564, wins per 10: 8, avg checkers diff: 8.4
+epoch: 5980, loss = 7414.049, wins per 10: 8, avg checkers diff: 5.7
+epoch: 5990, loss = 21296.377, wins per 10: 3, avg checkers diff: -4.6
+epoch: 6000, loss = 16780.961, wins per 100: 66, avg checkers diff: 3.66
+finished testing: 75.0 %
+saved checkpoint
+epoch: 6010, loss = 31549.396, wins per 10: 8, avg checkers diff: 6.5
+epoch: 6020, loss = 8506.413, wins per 10: 7, avg checkers diff: 6.6
+epoch: 6030, loss = 23057.088, wins per 10: 8, avg checkers diff: 4.4
+epoch: 6040, loss = 29966.883, wins per 10: 6, avg checkers diff: 2.1
+epoch: 6050, loss = 10253.203, wins per 10: 6, avg checkers diff: 7.3
+epoch: 6060, loss = 20865.240, wins per 10: 6, avg checkers diff: 4.4
+epoch: 6070, loss = 8026.465, wins per 10: 7, avg checkers diff: 2.3
+epoch: 6080, loss = 8588.877, wins per 10: 8, avg checkers diff: 10.4
+epoch: 6090, loss = 30746.066, wins per 10: 7, avg checkers diff: 5.8
+epoch: 6100, loss = 8480.139, wins per 100: 68, avg checkers diff: 5.17
+epoch: 6110, loss = 9860.665, wins per 10: 10, avg checkers diff: 11.7
+epoch: 6120, loss = 17855.771, wins per 10: 7, avg checkers diff: 5.9
+epoch: 6130, loss = 15447.382, wins per 10: 7, avg checkers diff: 6.2
+epoch: 6140, loss = 8331.110, wins per 10: 8, avg checkers diff: 8.0
+epoch: 6150, loss = 9060.231, wins per 10: 9, avg checkers diff: 9.4
+epoch: 6160, loss = 12981.172, wins per 10: 7, avg checkers diff: 6.8
+epoch: 6170, loss = 13527.697, wins per 10: 8, avg checkers diff: 7.6
+epoch: 6180, loss = 10205.052, wins per 10: 7, avg checkers diff: 6.0
+epoch: 6190, loss = 14911.168, wins per 10: 5, avg checkers diff: 1.6
+epoch: 6200, loss = 15045.801, wins per 100: 76, avg checkers diff: 6.83
+finished testing: 65.0 %
+epoch: 6210, loss = 13729.527, wins per 10: 5, avg checkers diff: 1.2
+epoch: 6220, loss = 11697.659, wins per 10: 6, avg checkers diff: 1.8
+epoch: 6230, loss = 12917.321, wins per 10: 7, avg checkers diff: 7.1
+epoch: 6240, loss = 9773.444, wins per 10: 7, avg checkers diff: 7.1
+epoch: 6250, loss = 9531.234, wins per 10: 8, avg checkers diff: 9.9
+epoch: 6260, loss = 26616.234, wins per 10: 8, avg checkers diff: 7.5
+epoch: 6270, loss = 14783.873, wins per 10: 10, avg checkers diff: 12.6
+epoch: 6280, loss = 6868.818, wins per 10: 9, avg checkers diff: 8.8
+epoch: 6290, loss = 38458.117, wins per 10: 6, avg checkers diff: 3.3
+epoch: 6300, loss = 24732.789, wins per 100: 71, avg checkers diff: 6.06
+epoch: 6310, loss = 17884.881, wins per 10: 7, avg checkers diff: 5.5
+epoch: 6320, loss = 13473.462, wins per 10: 10, avg checkers diff: 11.1
+epoch: 6330, loss = 12822.084, wins per 10: 9, avg checkers diff: 10.1
+epoch: 6340, loss = 12573.023, wins per 10: 4, avg checkers diff: -0.8
+epoch: 6350, loss = 22099.568, wins per 10: 7, avg checkers diff: 7.4
+epoch: 6360, loss = 53121.055, wins per 10: 6, avg checkers diff: 5.5
+epoch: 6370, loss = 22358.324, wins per 10: 5, avg checkers diff: 2.3
+epoch: 6380, loss = 20188.975, wins per 10: 8, avg checkers diff: 5.8
+epoch: 6390, loss = 32601.697, wins per 10: 8, avg checkers diff: 6.8
+epoch: 6400, loss = 18336.467, wins per 100: 72, avg checkers diff: 6.17
+finished testing: 70.0 %
+epoch: 6410, loss = 24870.246, wins per 10: 9, avg checkers diff: 9.9
+epoch: 6420, loss = 34269.418, wins per 10: 9, avg checkers diff: 8.6
+epoch: 6430, loss = 27298.012, wins per 10: 7, avg checkers diff: 8.1
+epoch: 6440, loss = 21870.385, wins per 10: 8, avg checkers diff: 6.5
+epoch: 6450, loss = 55063.004, wins per 10: 6, avg checkers diff: 6.6
+epoch: 6460, loss = 63884.465, wins per 10: 7, avg checkers diff: 6.8
+epoch: 6470, loss = 33418.109, wins per 10: 10, avg checkers diff: 9.5
+epoch: 6480, loss = 25485.186, wins per 10: 6, avg checkers diff: 3.2
+epoch: 6490, loss = 23116.619, wins per 10: 7, avg checkers diff: 7.1
+epoch: 6500, loss = 51250.223, wins per 100: 73, avg checkers diff: 6.68
+epoch: 6510, loss = 47162.242, wins per 10: 8, avg checkers diff: 7.4
+epoch: 6520, loss = 32718.148, wins per 10: 8, avg checkers diff: 7.3
+epoch: 6530, loss = 26847.238, wins per 10: 4, avg checkers diff: 3.8
+epoch: 6540, loss = 32250.418, wins per 10: 3, avg checkers diff: -2.2
+epoch: 6550, loss = 47175.434, wins per 10: 9, avg checkers diff: 11.4
+epoch: 6560, loss = 36470.914, wins per 10: 7, avg checkers diff: 7.4
+epoch: 6570, loss = 53252.734, wins per 10: 9, avg checkers diff: 10.6
+epoch: 6580, loss = 80756.523, wins per 10: 6, avg checkers diff: 4.2
+epoch: 6590, loss = 44545.582, wins per 10: 7, avg checkers diff: 4.3
+epoch: 6600, loss = 32126.463, wins per 100: 67, avg checkers diff: 5.85
+finished testing: 72.0 %
+epoch: 6610, loss = 47185.250, wins per 10: 5, avg checkers diff: 1.7
+epoch: 6620, loss = 32893.875, wins per 10: 4, avg checkers diff: 0.0
+epoch: 6630, loss = 63541.184, wins per 10: 6, avg checkers diff: 3.2
+epoch: 6640, loss = 96927.492, wins per 10: 7, avg checkers diff: 7.7
+epoch: 6650, loss = 60498.051, wins per 10: 6, avg checkers diff: 3.9
+epoch: 6660, loss = 85127.820, wins per 10: 4, avg checkers diff: -0.9
+epoch: 6670, loss = 56155.473, wins per 10: 8, avg checkers diff: 7.7
+epoch: 6680, loss = 103948.891, wins per 10: 6, avg checkers diff: 2.9
+epoch: 6690, loss = 64630.809, wins per 10: 6, avg checkers diff: 3.2
+epoch: 6700, loss = 87573.188, wins per 100: 60, avg checkers diff: 3.64
+epoch: 6710, loss = 127103.602, wins per 10: 7, avg checkers diff: 3.1
+epoch: 6720, loss = 62516.480, wins per 10: 8, avg checkers diff: 7.0
+epoch: 6730, loss = 94610.391, wins per 10: 5, avg checkers diff: 2.5
+epoch: 6740, loss = 94172.344, wins per 10: 8, avg checkers diff: 8.3
+epoch: 6750, loss = 105293.156, wins per 10: 7, avg checkers diff: 6.4
+epoch: 6760, loss = 51048.211, wins per 10: 9, avg checkers diff: 10.5
+epoch: 6770, loss = 64455.762, wins per 10: 7, avg checkers diff: 5.7
+epoch: 6780, loss = 139239.047, wins per 10: 8, avg checkers diff: 7.4
+epoch: 6790, loss = 276445.438, wins per 10: 8, avg checkers diff: 7.0
+epoch: 6800, loss = 80477.805, wins per 100: 75, avg checkers diff: 6.63
+finished testing: 78.0 %
+epoch: 6810, loss = 56017.605, wins per 10: 8, avg checkers diff: 7.5
+epoch: 6820, loss = 93639.352, wins per 10: 10, avg checkers diff: 13.3
+epoch: 6830, loss = 56351.484, wins per 10: 7, avg checkers diff: 4.1
+epoch: 6840, loss = 87917.195, wins per 10: 6, avg checkers diff: 2.9

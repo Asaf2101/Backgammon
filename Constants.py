@@ -21,16 +21,17 @@ CHECKERS_BOXES_PADDING = 40
 
 input_size = 34
 layer1 = 128
-layer2 = 64
+layer2 = 128
+layer3 = 64
 output_size = 1
 gamma = 0.99
 
 epsilon_start = 1
 epsilon_final = 0.01
-epsilon_decay = 1000
+epsilon_decay = 150
 
-epochs = 10000
-C = 50
+epochs = 8000
+C = 7
 batch_size = 32
 learning_rate = 0.0001
 

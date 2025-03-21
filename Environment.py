@@ -67,12 +67,9 @@ class Environment:
 
     def move_action(self, action):   # returns after state and reward
         move1, move2 = action   
-        # print('board before move:', self.state.board)
-        # print('action:', action)
         reward1 = self.move(move1)
         reward2 = self.move(move2)
         reward = reward1 + reward2
-        # print('board after move:', self.state.board)
 
         dice = self.state.dice
         if self.state.blocked == 0:             # blocked 0: rolls, regular action, in the end if double blocked = 1
@@ -88,10 +85,11 @@ class Environment:
             self.state.throw = True
             self.state.blocked = 0
 
+        # win / loss +- 10 and +- according to diff
         if self.end_of_game() == 1:
-            reward -= 10
+            reward -= 10 + 15 - self.state.checkers_out[1]
         elif self.end_of_game() == -1:
-            reward += 10
+            reward += 10 + 15 - self.state.checkers_out[0]
 
         return self.state, reward
 
@@ -109,6 +107,8 @@ class Environment:
         start_w_out, start_b_out = white_checkers_out, black_checkers_out
         start_w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         start_b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
+        start_b_ones = np.count_nonzero(board == -1)
+        start_w_ones = np.count_nonzero(board == 1)
                 
         if player == -1:
             if from_area == 24:
@@ -153,11 +153,14 @@ class Environment:
         # calculate reward
         w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
         b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
+        b_ones, w_ones = np.count_nonzero(board == -1), np.count_nonzero(board == 1)
         reward = 0
         if player == -1:
             reward += white_checkers_eaten - start_w_eaten
+            reward += 0.5 * (start_b_ones - b_ones)
         if player == 1:
             reward -= black_checkers_eaten - start_b_eaten
+            reward -= 0.5 * (start_w_ones - w_ones)
         reward += black_checkers_out - start_b_out
         reward -= white_checkers_out - start_w_out
         if not self.all_checkers_in_home(board, player):

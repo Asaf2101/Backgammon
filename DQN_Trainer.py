@@ -26,8 +26,9 @@ def main():
     optim = torch.optim.Adam(Q.parameters(), lr = learning_rate)
     
     start_epoch = 0
-    losses, wins_per_10, avg_checkers_diffs = [], [], []
+    losses, wins_per_100, avg_checkers_diffs = [], [], []
     sum_diff, wins = 0, 0
+    sum_diff10, wins10 = 0, 0
 
     # Prepare Tester
     tester = Tester(env, player1, player2)
@@ -36,7 +37,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-regTest3'
+    run_id = '-rndTest6'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -51,7 +52,7 @@ def main():
         buffer = torch.load(buffer_path)
         losses = checkpoint['loss']
         avg_checkers_diffs = checkpoint['avg_checkers_diff']
-        wins_per_10 = checkpoint['wins_per_10']
+        wins_per_100 = checkpoint['wins_per_100']
         best_win_precentage = checkpoint['best_win_precentage']
 
     # Prepare wandb
@@ -100,7 +101,7 @@ def main():
             buffer.push(og_state, action, reward, next_state, done)
             state = next_state
             
-            if len(buffer) < 5000:
+            if len(buffer) < 5000 or epoch < 401:
                 continue
             
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
@@ -119,33 +120,49 @@ def main():
         # calc and print data
         checkers_diff = state.checkers_out[1] - state.checkers_out[0]
         sum_diff += checkers_diff
+        sum_diff10 += checkers_diff
         if env.end_of_game() == -1:
             wins += 1
-        
-        if epoch % 10 == 0 and epoch > 0:
-            avg_checkers_diff = sum_diff / 10
+            wins10 += 1
+
+        if epoch % 10 == 0 and epoch > 0 and epoch % 100 != 0:
+            avg_checkers_diff = sum_diff10 / 10
+
+            # only relate to loss when it got computed
+            if 'loss' in locals():
+                print(f'epoch: {epoch}, loss = {loss.item():.3f}, wins per 10: {wins10}, avg checkers diff: {avg_checkers_diff}')
+            else:
+                print(f'epoch: {epoch}, wins per 10: {wins10}, avg checkers diff: {avg_checkers_diff}')
+            
+            sum_diff10 = 0
+            wins10 = 0
+
+        if epoch % 100 == 0 and epoch > 0:
+            avg_checkers_diff = sum_diff / 100
             
             # update data
-            wins_per_10.append(wins)
+            wins_per_100.append(wins)
             avg_checkers_diffs.append(avg_checkers_diff)
             
             log_data = {
-                'Wins Per 10 Games': wins,
-                'Average Checkers Diff Per 10 Games': avg_checkers_diff
+                'Wins Per 100 Games': wins,
+                'Average Checkers Diff Per 100 Games': avg_checkers_diff
             }
 
             # only relate to loss when it got computed
             if 'loss' in locals():
                 log_data['Loss'] = loss
                 losses.append(loss)
-                print(f'epoch: {epoch}, loss = {loss.item():.3f}, wins per 10: {wins}, avg checkers diff: {avg_checkers_diff}')
+                print(f'epoch: {epoch}, loss = {loss.item():.3f}, wins per 100: {wins}, avg checkers diff: {avg_checkers_diff}')
             else:
-                print(f'epoch: {epoch}, wins per 10: {wins}, avg checkers diff: {avg_checkers_diff}')
+                print(f'epoch: {epoch}, wins per 100: {wins}, avg checkers diff: {avg_checkers_diff}')
 
             wandb.log(log_data)
 
             sum_diff = 0
             wins = 0
+            sum_diff10 = 0
+            wins10 = 0
         
         # Test current model and save if has better win precentage
         if epoch % 200 == 0 and epoch > 0:
@@ -167,7 +184,7 @@ def main():
                 'optimizer_state_dict': optim.state_dict(),
                 'loss': losses,
                 'avg_checkers_diff': avg_checkers_diffs,
-                'wins_per_10': wins_per_10,
+                'wins_per_100': wins_per_100,
                 'best_win_precentage': best_win_precentage
             }
             torch.save(checkpoint, checkpoint_path)
