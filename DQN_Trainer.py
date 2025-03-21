@@ -37,7 +37,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-rndTest6'
+    run_id = '-rndTest8'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -101,7 +101,7 @@ def main():
             buffer.push(og_state, action, reward, next_state, done)
             state = next_state
             
-            if len(buffer) < 5000 or epoch < 401:
+            if len(buffer) < 5000 or epoch < 501:
                 continue
             
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)

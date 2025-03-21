@@ -1,0 +1,18 @@
+{"time":"2025-03-21T02:16:48.5636774+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250321_021648-Backgammon -rndTest8\\logs\\debug-core.log"}
+{"time":"2025-03-21T02:16:48.8105778+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T02:16:48.8111951+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T02:16:48.8111951+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T02:16:48.8111951+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T02:16:48.8111951+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T02:16:49.1958039+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-21T07:45:40.8293756+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest8/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-21T07:45:49.7324433+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.100.102.6:64801->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-21T08:08:08.8116969+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-21T08:08:08.8128039+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-21T08:08:09.8316793+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.5939891,"progress":"192B/192B"},{"desc":"uploading output.log","runtime_seconds":0.5939891,"progress":"46.7KB/46.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.3833461,"progress":"1.1KB/1.1KB"}],"total_operations":3}}
+{"time":"2025-03-21T08:08:10.1354614+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-21T08:08:10.3437086+02:00","level":"INFO","msg":"stream: closing","id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T08:08:10.3437086+02:00","level":"INFO","msg":"handler: closed","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T08:08:10.3437086+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T08:08:10.3452182+02:00","level":"INFO","msg":"sender: closed","stream_id":"Backgammon -rndTest8"}
+{"time":"2025-03-21T08:08:10.3452182+02:00","level":"INFO","msg":"stream: closed","id":"Backgammon -rndTest8"}

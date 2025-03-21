@@ -30,10 +30,10 @@ epsilon_start = 1
 epsilon_final = 0.01
 epsilon_decay = 150
 
-epochs = 8000
-C = 7
+epochs = 7000
+C = 15
 batch_size = 32
-learning_rate = 0.0001
+learning_rate = 0.00005
 
 if torch.cuda.is_available():
     device = torch.device('cuda')
