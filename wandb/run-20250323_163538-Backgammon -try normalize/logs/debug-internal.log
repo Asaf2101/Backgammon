@@ -1,0 +1,7 @@
+{"time":"2025-03-23T16:35:38.8907256+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250323_163538-Backgammon -try normalize\\logs\\debug-core.log"}
+{"time":"2025-03-23T16:35:39.7581562+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T16:35:39.7587567+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T16:35:39.7600415+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T16:35:39.7600415+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T16:35:39.7587567+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T16:35:40.1878794+02:00","level":"INFO","msg":"Starting system monitor"}

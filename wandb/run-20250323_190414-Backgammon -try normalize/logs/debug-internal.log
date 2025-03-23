@@ -1,0 +1,8 @@
+{"time":"2025-03-23T19:04:14.5713713+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250323_190414-Backgammon -try normalize\\logs\\debug-core.log"}
+{"time":"2025-03-23T19:04:14.6919304+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T19:04:14.6919304+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T19:04:14.6919304+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T19:04:14.6919304+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T19:04:14.6919304+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T19:04:14.9460925+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-23T19:07:31.1682185+02:00","level":"ERROR","msg":"monitor: error sampling metrics: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:65147->127.0.0.1:65144: wsarecv: An existing connection was forcibly closed by the remote host."}

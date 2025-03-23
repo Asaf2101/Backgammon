@@ -91,6 +91,8 @@ class Environment:
         elif self.end_of_game() == -1:
             reward += 10 + 15 - self.state.checkers_out[0]
 
+        reward /= 10  # normalize reward value
+
         return self.state, reward
 
     def move(self, move):

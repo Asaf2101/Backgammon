@@ -24,6 +24,7 @@ def main():
     Q_hat : DQN = Q.copy()
     Q_hat.train = False
     optim = torch.optim.Adam(Q.parameters(), lr = learning_rate)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 500, gamma = 0.95)
     
     start_epoch = 0
     losses, wins_per_100, avg_checkers_diffs = [], [], []
@@ -37,7 +38,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-rndTest8'
+    run_id = '-try normalize'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -49,6 +50,7 @@ def main():
         Q_hat.load_state_dict(checkpoint['model_state_dict'])
         best_model_state_dict = checkpoint['best_model_state_dict']
         optim.load_state_dict(checkpoint['optimizer_state_dict'])
+        scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
         buffer = torch.load(buffer_path)
         losses = checkpoint['loss']
         avg_checkers_diffs = checkpoint['avg_checkers_diff']
@@ -64,6 +66,7 @@ def main():
             'name': f'Backgammon {run_id}',
             'checkpoint': checkpoint_path,
             'learning_rate': learning_rate,
+            'scheduler': f'step size = {str(scheduler.step_size)}, gamma = {str(scheduler.gamma)}',
             'epochs': epochs,
             'start_epoch': start_epoch,
             'decay': epsilon_decay,
@@ -75,6 +78,8 @@ def main():
         }
     )
     
+    # tau = 0.005
+
     # Training loop
     for epoch in range(start_epoch, epochs):
         state = State()
@@ -101,7 +106,7 @@ def main():
             buffer.push(og_state, action, reward, next_state, done)
             state = next_state
             
-            if len(buffer) < 5000 or epoch < 501:
+            if len(buffer) < min_buffer or epoch < 101:
                 continue
             
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
@@ -111,8 +116,13 @@ def main():
                 Q_hat_values = Q_hat(next_states, next_actions)
             loss = Q.loss(Q_values, rewards, Q_hat_values, dones)
             loss.backward()
+            # torch.nn.utils.clip_grad_norm_(Q.parameters(), max_norm=5)
             optim.step()
             optim.zero_grad()
+            scheduler.step()
+
+            # for target_param, param in zip(Q_hat.parameters(), Q.parameters()):
+            #     target_param.data.copy_(tau * param.data + (1.0 - tau) * target_param.data)
 
         if epoch % C == 0:
             Q_hat.load_state_dict(Q.state_dict())
@@ -182,6 +192,7 @@ def main():
                 'model_state_dict': player1.DQN.state_dict(),
                 'best_model_state_dict': best_model_state_dict,
                 'optimizer_state_dict': optim.state_dict(),
+                'scheduler_state_dict' : scheduler.state_dict(),
                 'loss': losses,
                 'avg_checkers_diff': avg_checkers_diffs,
                 'wins_per_100': wins_per_100,

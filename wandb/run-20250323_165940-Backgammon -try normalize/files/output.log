@@ -1,0 +1,50 @@
+epoch: 10, wins per 10: 11, avg checkers diff: 13.2
+epoch: 20, wins per 10: 8, avg checkers diff: 9.0
+epoch: 30, wins per 10: 7, avg checkers diff: 8.5
+epoch: 40, wins per 10: 9, avg checkers diff: 11.5
+epoch: 50, wins per 10: 9, avg checkers diff: 10.3
+epoch: 60, wins per 10: 7, avg checkers diff: 7.3
+epoch: 70, wins per 10: 8, avg checkers diff: 8.2
+epoch: 80, wins per 10: 8, avg checkers diff: 9.8
+epoch: 90, wins per 10: 7, avg checkers diff: 6.7
+epoch: 100, wins per 100: 81, avg checkers diff: 8.85
+Traceback (most recent call last):
+  File "c:\Users\user\AppData\Local\Programs\Python\Python311\Lib\runpy.py", line 198, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\AppData\Local\Programs\Python\Python311\Lib\runpy.py", line 88, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\launcher/../..\debugpy\__main__.py", line 71, in <module>
+    cli.main()
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\launcher/../..\debugpy/..\debugpy\server\cli.py", line 501, in main
+    run()
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\launcher/../..\debugpy/..\debugpy\server\cli.py", line 351, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 310, in run_path
+    return _run_module_code(code, init_globals, run_name, pkg_name=pkg_name, script_name=fname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 127, in _run_module_code
+    _run_code(code, mod_globals, init_globals, mod_name, mod_spec, pkg_name, script_name)
+  File "c:\Users\user\.vscode\extensions\ms-python.debugpy-2025.4.1-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 118, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 205, in <module>
+    main()
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 112, in main
+    next_actions = player1.get_actions(next_states, dones)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Agent.py", line 54, in get_actions
+    actions.append(self.get_action(state = State.to_state(state, self.player), train = False))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Agent.py", line 34, in get_action
+    actions = self.env.get_all_actions(state)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 380, in get_all_actions
+    if white_checkers_eaten == 0: return self.get_regular_board_actions(state)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 489, in get_regular_board_actions
+    move1_out = self.get_checkers_out_move(board, dice1, player)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 434, in get_checkers_out_move
+    index = 24 - dice if board[24 - dice] > 0 else None             # valid index to play checker out
+                         ~~~~~^^^^^^^^^^^
+IndexError: index 24 is out of bounds for axis 0 with size 24

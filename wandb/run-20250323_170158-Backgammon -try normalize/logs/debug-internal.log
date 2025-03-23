@@ -1,0 +1,15 @@
+{"time":"2025-03-23T17:01:58.3197628+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250323_170158-Backgammon -try normalize\\logs\\debug-core.log"}
+{"time":"2025-03-23T17:01:58.440734+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:01:58.440734+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:01:58.440734+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:01:58.440734+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:01:58.440734+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:01:58.7060118+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-23T17:02:08.7871449+02:00","level":"INFO","msg":"stream: closing","id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:02:08.7871449+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-23T17:02:08.7885209+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-23T17:02:09.9774251+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-23T17:02:10.2497494+02:00","level":"INFO","msg":"handler: closed","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:02:10.2497494+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:02:10.2497494+02:00","level":"INFO","msg":"sender: closed","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-23T17:02:10.2500316+02:00","level":"INFO","msg":"stream: closed","id":"Backgammon -try normalize"}

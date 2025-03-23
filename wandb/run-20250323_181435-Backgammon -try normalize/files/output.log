@@ -1,0 +1,33 @@
+epoch: 10, wins per 10: 5, avg checkers diff: 0.2
+epoch: 20, wins per 10: 4, avg checkers diff: -0.7
+epoch: 30, wins per 10: 7, avg checkers diff: 7.0
+epoch: 40, wins per 10: 7, avg checkers diff: 3.2
+epoch: 50, wins per 10: 7, avg checkers diff: 6.7
+epoch: 60, wins per 10: 6, avg checkers diff: 2.9
+epoch: 70, wins per 10: 6, avg checkers diff: 4.6
+epoch: 80, wins per 10: 7, avg checkers diff: 2.3
+epoch: 90, wins per 10: 5, avg checkers diff: 2.6
+epoch: 100, wins per 100: 60, avg checkers diff: 3.08
+epoch: 110, loss = 0.168, wins per 10: 9, avg checkers diff: 11.8
+epoch: 120, loss = 0.021, wins per 10: 7, avg checkers diff: 4.6
+epoch: 130, loss = 0.856, wins per 10: 9, avg checkers diff: 10.9
+epoch: 140, loss = 0.417, wins per 10: 7, avg checkers diff: 5.6
+epoch: 150, loss = 0.758, wins per 10: 4, avg checkers diff: -2.7
+epoch: 160, loss = 2.893, wins per 10: 6, avg checkers diff: 0.9
+epoch: 170, loss = 10.631, wins per 10: 6, avg checkers diff: 4.8
+epoch: 180, loss = 43.115, wins per 10: 8, avg checkers diff: 5.6
+epoch: 190, loss = 2522.482, wins per 10: 5, avg checkers diff: -0.4
+epoch: 200, loss = 1688.570, wins per 100: 69, avg checkers diff: 4.85
+finished testing: 84.0 %
+epoch: 210, loss = 1485.126, wins per 10: 7, avg checkers diff: 5.5
+epoch: 220, loss = 343117.062, wins per 10: 5, avg checkers diff: -1.5
+epoch: 230, loss = 191136.656, wins per 10: 4, avg checkers diff: -0.4
+epoch: 240, loss = 127903.703, wins per 10: 6, avg checkers diff: 3.1
+epoch: 250, loss = 4704520.500, wins per 10: 8, avg checkers diff: 6.4
+epoch: 260, loss = 10030952.000, wins per 10: 6, avg checkers diff: 4.5
+epoch: 270, loss = 3802383.000, wins per 10: 5, avg checkers diff: 0.2
+epoch: 280, loss = 92823696.000, wins per 10: 3, avg checkers diff: -3.7
+epoch: 290, loss = 124852448.000, wins per 10: 4, avg checkers diff: -2.0
+epoch: 300, loss = 33829836.000, wins per 100: 52, avg checkers diff: 0.99
+epoch: 310, loss = 867703680.000, wins per 10: 4, avg checkers diff: -1.9
+epoch: 320, loss = 1297924352.000, wins per 10: 2, avg checkers diff: -6.4

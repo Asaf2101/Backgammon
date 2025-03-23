@@ -1,0 +1,34 @@
+epoch: 10, wins per 10: 6, avg checkers diff: -0.2
+epoch: 20, wins per 10: 7, avg checkers diff: 4.2
+epoch: 30, wins per 10: 8, avg checkers diff: 5.0
+epoch: 40, wins per 10: 3, avg checkers diff: -3.5
+epoch: 50, wins per 10: 4, avg checkers diff: -1.3
+epoch: 60, wins per 10: 6, avg checkers diff: 4.8
+epoch: 70, wins per 10: 6, avg checkers diff: 2.4
+epoch: 80, wins per 10: 2, avg checkers diff: -6.5
+epoch: 90, wins per 10: 7, avg checkers diff: 4.0
+epoch: 100, wins per 100: 53, avg checkers diff: 0.9
+epoch: 110, wins per 10: 6, avg checkers diff: 2.5
+epoch: 120, wins per 10: 5, avg checkers diff: 1.0
+Traceback (most recent call last):
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 205, in <module>
+    main()
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 112, in main
+    next_actions = player1.get_actions(next_states, dones)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Agent.py", line 54, in get_actions
+    actions.append(self.get_action(state = State.to_state(state, self.player), train = False))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Agent.py", line 34, in get_action
+    actions = self.env.get_all_actions(state)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 380, in get_all_actions
+    if white_checkers_eaten == 0: return self.get_regular_board_actions(state)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 489, in get_regular_board_actions
+    move1_out = self.get_checkers_out_move(board, dice1, player)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\Environment.py", line 434, in get_checkers_out_move
+    index = 24 - dice if board[24 - dice] > 0 else None             # valid index to play checker out
+                         ~~~~~^^^^^^^^^^^
+IndexError: index 24 is out of bounds for axis 0 with size 24

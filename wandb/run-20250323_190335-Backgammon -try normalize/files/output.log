@@ -1,0 +1,10 @@
+epoch: 10, wins per 10: 8, avg checkers diff: 5.2
+epoch: 20, wins per 10: 7, avg checkers diff: 7.6
+epoch: 30, wins per 10: 8, avg checkers diff: 8.4
+epoch: 40, wins per 10: 9, avg checkers diff: 9.5
+epoch: 50, wins per 10: 8, avg checkers diff: 4.2
+epoch: 60, wins per 10: 8, avg checkers diff: 5.5
+epoch: 70, wins per 10: 7, avg checkers diff: 5.1
+epoch: 80, wins per 10: 6, avg checkers diff: 3.8
+epoch: 90, wins per 10: 6, avg checkers diff: 2.1
+epoch: 100, wins per 100: 76, avg checkers diff: 6.08

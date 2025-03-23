@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 205, in <module>
+    main()
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Trainer.py", line 87, in main
+    action = player1.get_action(state = state, epoch = epoch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\VS Code\VS Python\Backgammon\DQN_Agent.py", line 41, in get_action
+    actions_np /= 10
+numpy.core._exceptions._UFuncOutputCastingError: Cannot cast ufunc 'divide' output from dtype('float64') to dtype('int64') with casting rule 'same_kind'

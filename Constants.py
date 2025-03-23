@@ -24,16 +24,17 @@ layer1 = 128
 layer2 = 128
 layer3 = 64
 output_size = 1
-gamma = 0.99
+gamma = 0.95
 
 epsilon_start = 1
 epsilon_final = 0.01
 epsilon_decay = 150
 
 epochs = 7000
-C = 15
+C = 10
 batch_size = 32
-learning_rate = 0.00005
+learning_rate = 0.0001
+min_buffer = 4000
 
 if torch.cuda.is_available():
     device = torch.device('cuda')
