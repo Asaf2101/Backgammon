@@ -40,12 +40,12 @@ class State:
         checkers_eaten = np.array(self.checkers_eaten)
         checkers_out = np.array(self.checkers_out)
         tensor = torch.tensor(np.concatenate([board, dice, checkers_eaten, checkers_out])).to(torch.float64)
-        tensor /= 10      # normalize state values
+        # tensor /= 10      # normalize state values
         return tensor
 
     [staticmethod]
     def to_state(state_tensor, player):
-        state_tensor *= 10    # unnormalize state values
+        # state_tensor *= 10    # unnormalize state values
         state_tensor = state_tensor.to(torch.int)
         res = State(board = np.array(state_tensor[:24]), dice = (state_tensor[24].item(), state_tensor[25].item()), 
                      checkers_eaten = (state_tensor[26].item(), state_tensor[27].item()),

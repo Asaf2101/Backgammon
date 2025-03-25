@@ -38,7 +38,7 @@ class DQN_Agent:
 
         state_tensor = state.to_tensor()
         actions_np = np.array(actions, dtype=np.float32)
-        actions_np /= 10
+        # actions_np /= 10    # normalize action values
         actions_tensor = torch.from_numpy(actions_np).reshape(-1, 4).to(torch.float32)
         expand_state_tensor = state_tensor.unsqueeze(0).repeat((len(actions_tensor), 1)).to(torch.float32)
         with torch.no_grad():

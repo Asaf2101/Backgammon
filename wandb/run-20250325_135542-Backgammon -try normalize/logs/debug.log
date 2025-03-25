@@ -1,0 +1,22 @@
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_setup.py:_flush():67] Configure stats pid to 5648
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_setup.py:_flush():67] Loading settings from C:\Users\Talmid\.config\wandb\settings
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_setup.py:_flush():67] Loading settings from C:\Users\Talmid\Desktop\Backgammnon-proj\Backgammon\wandb\settings
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\Talmid\Desktop\Backgammnon-proj\Backgammon\wandb\run-20250325_135542-Backgammon -try normalize\logs\debug.log
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\Talmid\Desktop\Backgammnon-proj\Backgammon\wandb\run-20250325_135542-Backgammon -try normalize\logs\debug-internal.log
+2025-03-25 13:55:42,850 INFO    MainThread:5648 [wandb_init.py:init():761] calling init triggers
+2025-03-25 13:55:42,865 INFO    MainThread:5648 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'name': 'Backgammon -try normalize', 'checkpoint': 'Data/Player1/checkpoint-try normalize.pth', 'learning_rate': 0.0001, 'epochs': 7000, 'start_epoch': 0, 'decay': 150, 'gamma': 0.95, 'batch_size': 32, 'C': 10, 'model': 'DQN(\n  (linear1): Linear(in_features=34, out_features=128, bias=True)\n  (linear2): Linear(in_features=128, out_features=128, bias=True)\n  (linear3): Linear(in_features=128, out_features=64, bias=True)\n  (output): Linear(in_features=64, out_features=1, bias=True)\n)', 'device': 'cpu', '_wandb': {}}
+2025-03-25 13:55:42,865 INFO    MainThread:5648 [wandb_init.py:init():784] starting backend
+2025-03-25 13:55:42,865 INFO    MainThread:5648 [wandb_init.py:init():788] sending inform_init request
+2025-03-25 13:55:42,874 INFO    MainThread:5648 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-25 13:55:42,886 INFO    MainThread:5648 [wandb_init.py:init():798] backend started and connected
+2025-03-25 13:55:42,887 INFO    MainThread:5648 [wandb_init.py:init():891] updated telemetry
+2025-03-25 13:55:42,955 INFO    MainThread:5648 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-25 13:55:43,344 INFO    MainThread:5648 [wandb_init.py:init():990] starting run threads in backend
+2025-03-25 13:55:43,476 INFO    MainThread:5648 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-25 13:55:43,476 INFO    MainThread:5648 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-25 13:55:43,476 INFO    MainThread:5648 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-25 13:55:43,476 INFO    MainThread:5648 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-25 13:55:43,480 INFO    MainThread:5648 [wandb_init.py:init():1032] run started, returning control to user process

@@ -1,0 +1,31 @@
+{
+  "os":  "Windows-10-10.0.22621-SP0",
+  "python":  "CPython 3.11.3",
+  "startedAt":  "2025-03-25T12:02:41.746214Z",
+  "program":  "c:\\Users\\Talmid\\Desktop\\Backgammnon-proj\\Backgammon\\DQN_Trainer.py",
+  "codePath":  "DQN_Trainer.py",
+  "git":  {
+    "remote":  "https://github.com/Asaf2101/Backgammon",
+    "commit":  "92744a014025b6c8f969ac4bd745cde65cd46060"
+  },
+  "email":  "sasaf2101@gmail.com",
+  "root":  "C:\\Users\\Talmid\\Desktop\\Backgammnon-proj\\Backgammon",
+  "host":  "User",
+  "executable":  "C:\\Users\\Talmid\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal":  "DQN_Trainer.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  4,
+  "disk":  {
+    "/":  {
+      "total":  "239074275328",
+      "used":  "166990422016"
+    }
+  },
+  "memory":  {
+    "total":  "8468713472"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  4
+  }
+}

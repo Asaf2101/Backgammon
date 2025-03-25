@@ -10,7 +10,7 @@ class ReplayBuffer:
 
     def push(self, state : State, action, reward, next_state : State, done):
         # normalizing action pushed here, state already normalized
-        self.buffer.append((state.to_tensor(), torch.from_numpy(np.array(action)) / 10, torch.tensor(reward), next_state.to_tensor(), torch.tensor(done)))
+        self.buffer.append((state.to_tensor(), torch.from_numpy(np.array(action)), torch.tensor(reward), next_state.to_tensor(), torch.tensor(done)))
 
     def push_tensors(self, state_tensor, action_tensor, reward_tensor, next_state_tensor, done):
         self.buffer.append((state_tensor, action_tensor, reward_tensor, next_state_tensor, done))

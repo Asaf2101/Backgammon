@@ -1,0 +1,7 @@
+{"time":"2025-03-25T13:47:24.501341+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\Talmid\\Desktop\\Backgammnon-proj\\Backgammon\\wandb\\run-20250325_134724-Backgammon -try normalize\\logs\\debug-core.log"}
+{"time":"2025-03-25T13:47:24.9680721+02:00","level":"INFO","msg":"created new stream","id":"Backgammon -try normalize"}
+{"time":"2025-03-25T13:47:24.9696588+02:00","level":"INFO","msg":"stream: started","id":"Backgammon -try normalize"}
+{"time":"2025-03-25T13:47:24.9726026+02:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-25T13:47:24.9711327+02:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-25T13:47:24.9750345+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -try normalize"}
+{"time":"2025-03-25T13:47:25.385501+02:00","level":"INFO","msg":"Starting system monitor"}
