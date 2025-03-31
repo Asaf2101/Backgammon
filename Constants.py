@@ -31,7 +31,7 @@ epsilon_final = 0.01
 epsilon_decay = 150
 
 epochs = 7000
-C = 10
+C = 8
 batch_size = 32
 learning_rate = 0.0001
 min_buffer = 4000
