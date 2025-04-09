@@ -649,8 +649,10 @@ class Environment:
 
 
 '''
-win +10, lose -10
+Reward:
+win +10, lose -10  --> +/- diff
 ate +1 each, eaten -1 each
-checkers out +1 each, enemy checkers out - 1 each
-checkers entered end zone +0.5*num, enemy checkers entered end zone -0.5*num
+out +1 each, enemy out -1 each
+entered end zone +0.5*num, enemy entered end zone -0.5*num
++0.5*(start ones - end ones)
 '''

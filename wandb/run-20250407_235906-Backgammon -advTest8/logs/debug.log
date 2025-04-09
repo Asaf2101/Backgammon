@@ -1,0 +1,30 @@
+2025-04-07 23:59:06,342 INFO    MainThread:18524 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-07 23:59:06,343 INFO    MainThread:18524 [wandb_setup.py:_flush():67] Configure stats pid to 18524
+2025-04-07 23:59:06,343 INFO    MainThread:18524 [wandb_setup.py:_flush():67] Loading settings from C:\Users\user\.config\wandb\settings
+2025-04-07 23:59:06,343 INFO    MainThread:18524 [wandb_setup.py:_flush():67] Loading settings from C:\Users\user\VS Code\VS Python\Backgammon\wandb\settings
+2025-04-07 23:59:06,344 INFO    MainThread:18524 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-07 23:59:06,344 INFO    MainThread:18524 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\user\VS Code\VS Python\Backgammon\wandb\run-20250407_235906-Backgammon -advTest8\logs\debug.log
+2025-04-07 23:59:06,345 INFO    MainThread:18524 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\user\VS Code\VS Python\Backgammon\wandb\run-20250407_235906-Backgammon -advTest8\logs\debug-internal.log
+2025-04-07 23:59:06,345 INFO    MainThread:18524 [wandb_init.py:init():761] calling init triggers
+2025-04-07 23:59:06,346 INFO    MainThread:18524 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'name': 'Backgammon -advTest8', 'checkpoint': 'Data/Player1/checkpoint-advTest8.pth', 'learning_rate': 0.0001, 'scheduler': 'step size = 1000, gamma = 0.95', 'epochs': 20000, 'start_epoch': 1001, 'decay': 150, 'gamma': 0.95, 'batch_size': 32, 'C': 8, 'model': 'DQN(\n  (linear1): Linear(in_features=34, out_features=128, bias=True)\n  (linear2): Linear(in_features=128, out_features=128, bias=True)\n  (linear3): Linear(in_features=128, out_features=64, bias=True)\n  (output): Linear(in_features=64, out_features=1, bias=True)\n)', 'device': 'cuda', '_wandb': {}}
+2025-04-07 23:59:06,346 INFO    MainThread:18524 [wandb_init.py:init():784] starting backend
+2025-04-07 23:59:06,346 INFO    MainThread:18524 [wandb_init.py:init():788] sending inform_init request
+2025-04-07 23:59:06,382 INFO    MainThread:18524 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-04-07 23:59:06,382 INFO    MainThread:18524 [wandb_init.py:init():798] backend started and connected
+2025-04-07 23:59:06,383 INFO    MainThread:18524 [wandb_init.py:init():891] updated telemetry
+2025-04-07 23:59:06,476 INFO    MainThread:18524 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-07 23:59:07,230 INFO    MainThread:18524 [wandb_init.py:init():985] run resumed
+2025-04-07 23:59:07,231 INFO    MainThread:18524 [wandb_init.py:init():990] starting run threads in backend
+2025-04-07 23:59:07,366 INFO    MainThread:18524 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-07 23:59:07,367 INFO    MainThread:18524 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-07 23:59:07,367 INFO    MainThread:18524 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-07 23:59:07,367 INFO    MainThread:18524 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-07 23:59:07,375 INFO    MainThread:18524 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-09 04:37:18,843 INFO    MainThread:18524 [wandb_run.py:_finish():2112] finishing run asaf2101-/Backgammon/Backgammon -advTest8
+2025-04-09 04:37:18,845 INFO    MainThread:18524 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-04-09 04:37:18,847 INFO    MainThread:18524 [wandb_run.py:_restore():2322] restore
+2025-04-09 04:37:18,848 INFO    MainThread:18524 [wandb_run.py:_restore():2328] restore done
+2025-04-09 04:37:21,107 INFO    MainThread:18524 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-04-09 04:37:21,108 INFO    MainThread:18524 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-04-09 04:37:21,110 INFO    MainThread:18524 [wandb_run.py:_footer_sync_info():3917] logging synced files

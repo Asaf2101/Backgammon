@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.11.4
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 5
+                - 14
+                - 16
+                - 23
+                - 55
+                - 62
+            "4": 3.11.4
+            "5": 0.19.8
+            "8":
+                - 3
+                - 5
+            "12": 0.19.8
+            "13": windows-amd64
+C:
+    value: 8
+batch_size:
+    value: 32
+checkpoint:
+    value: Data/Player1/checkpoint-advTest8.pth
+decay:
+    value: 150
+device:
+    value: cuda
+epochs:
+    value: 20000
+gamma:
+    value: 0.95
+learning_rate:
+    value: 0.0001
+model:
+    value: |-
+        DQN(
+          (linear1): Linear(in_features=34, out_features=128, bias=True)
+          (linear2): Linear(in_features=128, out_features=128, bias=True)
+          (linear3): Linear(in_features=128, out_features=64, bias=True)
+          (output): Linear(in_features=64, out_features=1, bias=True)
+        )
+name:
+    value: Backgammon -advTest8
+scheduler:
+    value: step size = 1000, gamma = 0.95
+start_epoch:
+    value: 1001

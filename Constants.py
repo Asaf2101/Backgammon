@@ -30,7 +30,7 @@ epsilon_start = 1
 epsilon_final = 0.01
 epsilon_decay = 150
 
-epochs = 7000
+epochs = 20000
 C = 8
 batch_size = 32
 learning_rate = 0.0001
