@@ -78,7 +78,6 @@ def main():
         }
     )
     
-    # tau = 0.005
 
     # Training loop
     for epoch in range(start_epoch, epochs):
@@ -116,13 +115,9 @@ def main():
                 Q_hat_values = Q_hat(next_states, next_actions)
             loss = Q.loss(Q_values, rewards, Q_hat_values, dones)
             loss.backward()
-            # torch.nn.utils.clip_grad_norm_(Q.parameters(), max_norm=5)
             optim.step()
             optim.zero_grad()
             scheduler.step()
-
-            # for target_param, param in zip(Q_hat.parameters(), Q.parameters()):
-            #     target_param.data.copy_(tau * param.data + (1.0 - tau) * target_param.data)
 
         if epoch % C == 0:
             Q_hat.load_state_dict(Q.state_dict())

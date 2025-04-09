@@ -65,6 +65,7 @@ class Environment:
         else:
             self.state.player = -1
 
+
     def move_action(self, action):   # returns after state and reward
         move1, move2 = action   
         reward1 = self.move(move1)
@@ -85,17 +86,15 @@ class Environment:
             self.state.throw = True
             self.state.blocked = 0
 
-        # win / loss +- 10 and +- according to diff
+        # win / loss +-10 and +- according to diff
         if self.end_of_game() == 1:
             reward -= 10 + 15 - self.state.checkers_out[1]
         elif self.end_of_game() == -1:
             reward += 10 + 15 - self.state.checkers_out[0]
 
-        # reward /= 10  # normalize reward value
-
         return self.state, reward
 
-    def move(self, move):
+    def move(self, move):   # applying move and calculating reward
         from_area, to_area = move
         board = self.state.board
         white_checkers_eaten, black_checkers_eaten = self.state.checkers_eaten
@@ -160,11 +159,11 @@ class Environment:
         if player == -1:
             reward += white_checkers_eaten - start_w_eaten
             reward += 0.5 * (start_b_ones - b_ones)
+            reward += black_checkers_out - start_b_out
         if player == 1:
             reward -= black_checkers_eaten - start_b_eaten
             reward -= 0.5 * (start_w_ones - w_ones)
-        reward += black_checkers_out - start_b_out
-        reward -= white_checkers_out - start_w_out
+            reward -= white_checkers_out - start_w_out
         if not self.all_checkers_in_home(board, player):
             reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
             reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
@@ -174,6 +173,7 @@ class Environment:
         self.state.checkers_out = white_checkers_out, black_checkers_out
 
         return reward
+
 
     def legal_move(self, move):
         from_area, to_area = move
