@@ -28,10 +28,10 @@ gamma = 0.95
 
 epsilon_start = 1
 epsilon_final = 0.01
-epsilon_decay = 1000
+epsilon_decay = 1500
 
-epochs = 9000
-C = 8
+epochs = 10000
+C = 30
 batch_size = 32
 learning_rate = 0.001
 min_buffer = 4000

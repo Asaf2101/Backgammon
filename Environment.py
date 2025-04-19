@@ -270,8 +270,8 @@ class Environment:
         total -= self.total_distance(player) / (15 * 23)
 
         # Safety
-        total -= 0.5 * self.single_checkers(player)
-        total += 0.5 * self.single_checkers(-player)
+        total -= 0.5 * self.count_single_checkers(player)
+        total += 0.5 * self.count_single_checkers(-player)
         total += 0.2 * self.count_anchors(player)
         total += 0.3 * self.count_primes(player)
 
@@ -305,7 +305,7 @@ class Environment:
         
         return distance
 
-    def single_checkers(self, player):
+    def count_single_checkers(self, player):
         board = self.state.board
         return np.count_nonzero(board == -1) if player == -1 else np.count_nonzero(board == 1)
 

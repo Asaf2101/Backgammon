@@ -1,0 +1,10 @@
+epoch: 1010, loss = 10.606, wins per 10: 4, avg checkers diff: -2.0
+epoch: 1020, loss = 6.140, wins per 10: 2, avg checkers diff: -7.7
+epoch: 1030, loss = 13.425, wins per 10: 3, avg checkers diff: -2.8
+epoch: 1040, loss = 8.929, wins per 10: 3, avg checkers diff: -5.3
+epoch: 1050, loss = 14.830, wins per 10: 1, avg checkers diff: -12.0
+epoch: 1060, loss = 11.160, wins per 10: 1, avg checkers diff: -10.6
+epoch: 1070, loss = 10.882, wins per 10: 2, avg checkers diff: -6.5
+epoch: 1080, loss = 7.947, wins per 10: 2, avg checkers diff: -9.5
+epoch: 1090, loss = 18.083, wins per 10: 3, avg checkers diff: -5.9
+epoch: 1100, loss = 33.205, wins per 100: 23, avg checkers diff: -7.05

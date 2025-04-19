@@ -38,7 +38,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-rndTest14'
+    run_id = '-advTest11'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -117,10 +117,10 @@ def main():
             loss.backward()
             optim.step()
             optim.zero_grad()
-            scheduler.step()
 
         if epoch % C == 0:
             Q_hat.load_state_dict(Q.state_dict())
+        scheduler.step()
         
         # calc and print data
         checkers_diff = state.checkers_out[1] - state.checkers_out[0]
