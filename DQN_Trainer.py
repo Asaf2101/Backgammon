@@ -24,7 +24,7 @@ def main():
     Q_hat : DQN = Q.copy()
     Q_hat.train = False
     optim = torch.optim.Adam(Q.parameters(), lr = learning_rate)
-    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1000, gamma = 0.95)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1500, gamma = 0.95)
     
     start_epoch = 0
     losses, wins_per_100, avg_checkers_diffs = [], [], []
@@ -38,7 +38,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-advTest8'
+    run_id = '-rndTest14'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'
@@ -105,7 +105,7 @@ def main():
             buffer.push(og_state, action, reward, next_state, done)
             state = next_state
             
-            if len(buffer) < min_buffer or epoch < 501:
+            if len(buffer) < min_buffer or epoch < 301:
                 continue
             
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
@@ -173,7 +173,7 @@ def main():
         if epoch % 200 == 0 and epoch > 0:
             player1.train = False
             player1.train_mode()
-            win_precentage = tester.test(100)[0]
+            win_precentage = tester.test(300)[0]
             if win_precentage > best_win_precentage:
                 best_win_precentage = win_precentage
                 best_model_state_dict = player1.DQN.state_dict()

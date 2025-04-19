@@ -6,12 +6,12 @@ from DQN_Agent import DQN_Agent
 from Advanced_Random_Agent import Advanced_Random_Agent
 import torch
 
-# path = ''
-# checkpoint = torch.load('Data/Player1/checkpoint-rndTest6.pth')
+# path = 'Data/Player1/checkpoint-rndTest14.pth'
+# checkpoint = torch.load(path)
 # env = Environment()
 # player1 = DQN_Agent(1, env = env, train = False)
 # player1.DQN.load_state_dict(checkpoint['best_model_state_dict'])
-# # print(checkpoint['best_win_precentage'])
+# print(checkpoint['best_win_precentage'])
 # player2 = Random_Agent(2, env = env, graphics = None)
 # player2 = Advanced_Random_Agent(2, env = env, graphics = None)
 
@@ -46,6 +46,6 @@ class Tester:
             return self.player1
 
 # tester = Tester(env = env, player1 = player1, player2 = player2)
-# games_num = 100
+# games_num = 1000
 # black_win, white_win = tester.test(games_num)
 # print('Black:', black_win, 'White:', white_win, '-->', black_win / games_num * 100,'%')

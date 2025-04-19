@@ -1,0 +1,10 @@
+{"time":"2025-04-18T17:30:31.2274303+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250418_173031-Backgammon -rndTest9\\logs\\debug-core.log"}
+{"time":"2025-04-18T17:30:31.3484391+03:00","level":"INFO","msg":"created new stream","id":"Backgammon -rndTest9"}
+{"time":"2025-04-18T17:30:31.3484391+03:00","level":"INFO","msg":"stream: started","id":"Backgammon -rndTest9"}
+{"time":"2025-04-18T17:30:31.3484391+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -rndTest9"}
+{"time":"2025-04-18T17:30:31.3484391+03:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -rndTest9"}
+{"time":"2025-04-18T17:30:31.3489442+03:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -rndTest9"}
+{"time":"2025-04-18T17:30:31.5950383+03:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run Backgammon -rndTest9 was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T17:30:33.8914807+03:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run Backgammon -rndTest9 was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T17:30:38.6418031+03:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run Backgammon -rndTest9 was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T17:30:46.9236038+03:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run Backgammon -rndTest9 was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}

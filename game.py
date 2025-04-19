@@ -16,7 +16,10 @@ def create_agent(type, id, env : Environment, graphics : Graphics):
     elif type == 'Advanced Random Agent':
         return Advanced_Random_Agent(id, env, graphics)
     elif type == 'DQN Agent':
-        return DQN_Agent(id, env = env, train = False)
+        path = torch.load('Data/Player1/checkpoint-rndTest14.pth')
+        agent = DQN_Agent(id, env = env, train = False)
+        agent.DQN.load_state_dict(path['best_model_state_dict'])
+        return agent
     
 def start_menu():
     screen = pygame.display.get_surface()

@@ -1,0 +1,42 @@
+{
+  "os":  "Windows-10-10.0.22631-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2025-04-18T21:38:49.113724Z",
+  "program":  "c:\\Users\\user\\VS Code\\VS Python\\Backgammon\\DQN_Trainer.py",
+  "codePath":  "DQN_Trainer.py",
+  "git":  {
+    "remote":  "https://github.com/Asaf2101/Backgammon.git",
+    "commit":  "13ea490460863cd9593274ef1994ff80cecb283d"
+  },
+  "email":  "sasaf2101@gmail.com",
+  "root":  "C:\\Users\\user\\VS Code\\VS Python\\Backgammon",
+  "host":  "Asaf-PC",
+  "executable":  "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal":  "DQN_Trainer.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "gpu":  "NVIDIA GeForce MX150",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "999239872512",
+      "used":  "529040252928"
+    }
+  },
+  "memory":  {
+    "total":  "12753539072"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce MX150",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  384,
+      "architecture":  "Pascal"
+    }
+  ],
+  "cudaVersion":  "12.3"
+}

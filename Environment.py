@@ -66,114 +66,7 @@ class Environment:
             self.state.player = -1
 
 
-    def move_action(self, action):   # returns after state and reward
-        move1, move2 = action   
-        reward1 = self.move(move1)
-        reward2 = self.move(move2)
-        reward = reward1 + reward2
-
-        dice = self.state.dice
-        if self.state.blocked == 0:             # blocked 0: rolls, regular action, in the end if double blocked = 1
-            if dice[0] == dice[1]:              # blocked 1: no roll, immediately blocked = 2
-                self.state.blocked = 1          # blocked 2: no roll, end turn with (-1) action, in the end blocked = 3
-            else:                               # blocked 3: no roll, regular action, in the end blocked = 0
-                self.state.throw = True
-
-        elif self.state.blocked == 2:
-            self.state.blocked = 3
-            
-        elif self.state.blocked == 3:
-            self.state.throw = True
-            self.state.blocked = 0
-
-        # win / loss +-10 and +- according to diff
-        if self.end_of_game() == 1:
-            reward -= 10 + 15 - self.state.checkers_out[1]
-        elif self.end_of_game() == -1:
-            reward += 10 + 15 - self.state.checkers_out[0]
-
-        return self.state, reward
-
-    def move(self, move):   # applying move and calculating reward
-        from_area, to_area = move
-        board = self.state.board
-        white_checkers_eaten, black_checkers_eaten = self.state.checkers_eaten
-        white_checkers_out, black_checkers_out = self.state.checkers_out
-        player = self.state.player
-
-        if move == (-1, -1):
-            return 0          # reward 0
-
-        start_w_eaten, start_b_eaten = white_checkers_eaten, black_checkers_eaten
-        start_w_out, start_b_out = white_checkers_out, black_checkers_out
-        start_w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
-        start_b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
-        start_b_ones = np.count_nonzero(board == -1)
-        start_w_ones = np.count_nonzero(board == 1)
-                
-        if player == -1:
-            if from_area == 24:
-                black_checkers_eaten -= 1
-                if board[to_area] == 1:
-                    board[to_area] = -1
-                    white_checkers_eaten += 1
-                else:
-                    board[to_area] -= 1
-            elif to_area == 26:
-                black_checkers_out += 1
-                board[from_area] += 1
-            else:
-                if board[to_area] == 1:
-                    board[to_area] = -1
-                    white_checkers_eaten += 1
-                    board[from_area] += 1
-                else:
-                    board[to_area] -= 1
-                    board[from_area] += 1
-
-        else:
-            if from_area == 25:
-                white_checkers_eaten -= 1
-                if board[to_area] == -1:
-                    board[to_area] = 1
-                    black_checkers_eaten += 1
-                else:
-                    board[to_area] += 1
-            elif to_area == 27:
-                white_checkers_out += 1
-                board[from_area] -= 1
-            else:
-                if board[to_area] == -1:
-                    board[to_area] = 1
-                    black_checkers_eaten += 1
-                    board[from_area] -= 1
-                else:
-                    board[to_area] += 1
-                    board[from_area] -= 1
-        
-        # calculate reward
-        w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
-        b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
-        b_ones, w_ones = np.count_nonzero(board == -1), np.count_nonzero(board == 1)
-        reward = 0
-        if player == -1:
-            reward += white_checkers_eaten - start_w_eaten
-            reward += 0.5 * (start_b_ones - b_ones)
-            reward += black_checkers_out - start_b_out
-        if player == 1:
-            reward -= black_checkers_eaten - start_b_eaten
-            reward -= 0.5 * (start_w_ones - w_ones)
-            reward -= white_checkers_out - start_w_out
-        if not self.all_checkers_in_home(board, player):
-            reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
-            reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
-
-        self.state.board = board
-        self.state.checkers_eaten = white_checkers_eaten, black_checkers_eaten
-        self.state.checkers_out = white_checkers_out, black_checkers_out
-
-        return reward
-
+    # action and move legality check
 
     def legal_move(self, move):
         from_area, to_area = move
@@ -240,6 +133,223 @@ class Environment:
         return (dice1 in dice_first_move and dice2 in dice_second_move) or (dice1 in dice_second_move and dice2 in dice_first_move)
 
 
+    # applying action
+
+    def move_action(self, action):   # returns after state and reward
+        move1, move2 = action
+
+        start_turn_evaluation = self.evaluate_state_black()
+        reward1 = self.move(move1)
+        reward2 = self.move(move2)
+        end_turn_evaluation = self.evaluate_state_black()
+
+        # move based reward system:
+        # reward = reward1 + reward2
+        
+        # state based reward system:
+        reward = end_turn_evaluation - start_turn_evaluation
+
+        dice = self.state.dice
+        if self.state.blocked == 0:             # blocked 0: rolls, regular action, in the end if double blocked = 1
+            if dice[0] == dice[1]:              # blocked 1: no roll, immediately blocked = 2
+                self.state.blocked = 1          # blocked 2: no roll, end turn with (-1) action, in the end blocked = 3
+            else:                               # blocked 3: no roll, regular action, in the end blocked = 0
+                self.state.throw = True
+        elif self.state.blocked == 2:
+            self.state.blocked = 3  
+        elif self.state.blocked == 3:
+            self.state.throw = True
+            self.state.blocked = 0
+
+        # win / loss +-10 and +- according to diff
+        end_result = self.end_of_game()
+        if end_result == 1:
+            reward -= 10 + 15 - self.state.checkers_out[1]
+        elif end_result == -1:
+            reward += 10 + 15 - self.state.checkers_out[0]
+
+        return self.state, reward
+
+    def move(self, move):   # applying move and calculating reward
+        from_area, to_area = move
+        board = self.state.board
+        white_checkers_eaten, black_checkers_eaten = self.state.checkers_eaten
+        white_checkers_out, black_checkers_out = self.state.checkers_out
+        player = self.state.player
+        
+        if move == (-1, -1):
+            return 0          # reward 0
+
+        # reward system move based
+        start_w_eaten, start_b_eaten = white_checkers_eaten, black_checkers_eaten
+        start_w_out, start_b_out = white_checkers_out, black_checkers_out
+        start_w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
+        start_b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
+        start_b_ones = np.count_nonzero(board == -1)
+        start_w_ones = np.count_nonzero(board == 1)
+        
+
+           
+        if player == -1:
+            if from_area == 24:
+                black_checkers_eaten -= 1
+                if board[to_area] == 1:
+                    board[to_area] = -1
+                    white_checkers_eaten += 1
+                else:
+                    board[to_area] -= 1
+            elif to_area == 26:
+                black_checkers_out += 1
+                board[from_area] += 1
+            else:
+                if board[to_area] == 1:
+                    board[to_area] = -1
+                    white_checkers_eaten += 1
+                    board[from_area] += 1
+                else:
+                    board[to_area] -= 1
+                    board[from_area] += 1
+
+        else:
+            if from_area == 25:
+                white_checkers_eaten -= 1
+                if board[to_area] == -1:
+                    board[to_area] = 1
+                    black_checkers_eaten += 1
+                else:
+                    board[to_area] += 1
+            elif to_area == 27:
+                white_checkers_out += 1
+                board[from_area] -= 1
+            else:
+                if board[to_area] == -1:
+                    board[to_area] = 1
+                    black_checkers_eaten += 1
+                    board[from_area] -= 1
+                else:
+                    board[to_area] += 1
+                    board[from_area] -= 1
+        
+        # continuation of reward system move based
+        reward = 0
+        w_checkers_end_zone = sum(x for x in board[18:24] if x > 0)
+        b_checkers_end_zone = abs(sum(x for x in board[0:6] if x < 0))
+        b_ones, w_ones = np.count_nonzero(board == -1), np.count_nonzero(board == 1)
+        if player == -1:
+            reward += white_checkers_eaten - start_w_eaten
+            reward += 0.5 * (start_b_ones - b_ones)
+            reward += black_checkers_out - start_b_out
+        if player == 1:
+            reward -= black_checkers_eaten - start_b_eaten
+            reward -= 0.5 * (start_w_ones - w_ones)
+            reward -= white_checkers_out - start_w_out
+        if not self.all_checkers_in_home(board, player):
+            reward += 0.5 * (b_checkers_end_zone - start_b_checkers_end_zone)
+            reward -= 0.5 * (w_checkers_end_zone - start_w_checkers_end_zone)
+
+        self.state.board = board
+        self.state.checkers_eaten = white_checkers_eaten, black_checkers_eaten
+        self.state.checkers_out = white_checkers_out, black_checkers_out
+
+        return reward
+
+
+    # evaluate state logic
+
+    def evaluate_state_black(self):
+        board = self.state.board
+        white_checkers_eaten, black_checkers_eaten = self.state.checkers_eaten
+        white_checkers_out, black_checkers_out = self.state.checkers_out
+        player = -1
+
+        total = 0
+        
+        # Bear-off progress
+        total += black_checkers_out
+        total += 0.5 * self.num_checkers_in_home(player)
+        total -= self.total_distance(player) / (15 * 23)
+
+        # Safety
+        total -= 0.5 * self.single_checkers(player)
+        total += 0.5 * self.single_checkers(-player)
+        total += 0.2 * self.count_anchors(player)
+        total += 0.3 * self.count_primes(player)
+
+        # Bar
+        total -= black_checkers_eaten
+        total += white_checkers_eaten
+
+        # Key points control
+        total += self.key_points_value(player)
+        total -= self.key_points_value(-player)
+
+        return total
+
+    def num_checkers_in_home(self, player):
+        board = self.state.board
+        return abs(sum(x for x in board[0:6] if x < 0)) if player == -1 else sum(x for x in board[18:24] if x > 0)
+
+    def total_distance(self, player):
+        board = self.state.board
+        white_checkers_eaten, black_checkers_eaten = self.state.checkers_eaten
+
+        indices = np.arange(24)
+        if player == -1:
+            black_positions = board < 0
+            distance = np.sum(np.abs(board[black_positions]) * indices[black_positions])
+            distance += 24 * black_checkers_eaten
+        else:
+            white_positions = board > 0
+            distance = np.sum(board[white_positions] * (23 - indices[white_positions]))
+            distance += 24 * white_checkers_eaten
+        
+        return distance
+
+    def single_checkers(self, player):
+        board = self.state.board
+        return np.count_nonzero(board == -1) if player == -1 else np.count_nonzero(board == 1)
+
+    def count_anchors(self, player):
+        board = self.state.board
+        return np.count_nonzero(board < -1) if player == -1 else np.count_nonzero(board > 1)
+
+    def count_primes(self, player):
+        board = self.state.board
+        primes = 0
+
+        if player == -1: anchors = board < -1
+        else: anchors = board > 1
+
+        for i in range(len(anchors) - 1):
+            if anchors[i] and anchors[i + 1]:
+                primes += 1
+        
+        return primes
+
+    def key_points_value(self, player):
+        board = self.state.board
+
+        if player == -1:
+            key_points_weights = {
+                4: 1.5,   # 5-point 
+                6: 1.0,   # bar point
+                12: 0.8,  # midpoint
+                17: 0.5   # advanced anchor
+            }
+            key_points_value = sum(weight for idx, weight in key_points_weights.items() if board[idx] < -1)
+        else:
+            key_points_weights = {
+                19: 1.5,  # 5-point
+                17: 1.0,  # bar point
+                11: 0.8,  # midpoint
+                6: 0.5    # advanced anchor
+            }
+            key_points_value = sum(weight for idx, weight in key_points_weights.items() if board[idx] > 1)
+        
+        return key_points_value
+
+
+    # old get all actions logic
 
     def slow_get_all_first_moves(self):    # returns all first legal moves, if none then (-1, -1)
         moves = []
@@ -303,7 +413,6 @@ class Environment:
         
         return valid_indices
 
-    
     
     # new get all actions logic
 

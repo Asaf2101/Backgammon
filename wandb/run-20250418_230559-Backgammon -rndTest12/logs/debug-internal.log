@@ -1,0 +1,14 @@
+{"time":"2025-04-18T23:05:59.38327+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\user\\VS Code\\VS Python\\Backgammon\\wandb\\run-20250418_230559-Backgammon -rndTest12\\logs\\debug-core.log"}
+{"time":"2025-04-18T23:05:59.5075393+03:00","level":"INFO","msg":"created new stream","id":"Backgammon -rndTest12"}
+{"time":"2025-04-18T23:05:59.5081363+03:00","level":"INFO","msg":"stream: started","id":"Backgammon -rndTest12"}
+{"time":"2025-04-18T23:05:59.5082609+03:00","level":"INFO","msg":"sender: started","stream_id":"Backgammon -rndTest12"}
+{"time":"2025-04-18T23:05:59.5082609+03:00","level":"INFO","msg":"handler: started","stream_id":"Backgammon -rndTest12"}
+{"time":"2025-04-18T23:05:59.5082609+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"Backgammon -rndTest12"}
+{"time":"2025-04-18T23:05:59.8262738+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T23:54:31.4908263+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-18T23:55:03.8404185+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-04-18T23:55:08.3471248+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest12/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-18T23:55:15.5825727+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest12/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-18T23:59:00.0616334+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest12/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-19T00:26:30.4714087+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest12/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-19T00:26:37.7333913+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/asaf2101-/Backgammon/Backgammon%20-rndTest12/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
