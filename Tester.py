@@ -4,7 +4,9 @@ from Human_Agent import Human_Agent
 from Random_Agent import Random_Agent
 from DQN_Agent import DQN_Agent
 from Advanced_Random_Agent import Advanced_Random_Agent
+from Diverse_Agent import Diverse_Agent
 import torch
+import random
 
 # path = 'Data/Player1/checkpoint-rndTest14.pth'
 # checkpoint = torch.load(path)
@@ -25,6 +27,10 @@ class Tester:
         black_win, white_win = 0, 0
         for game in range(games_num):
             print('game =', game, end = '\r')
+
+            if hasattr(self.player2, 'strategy_type') and game % 30 == 0:   # against diverse agent, testing equally against all strategies
+                self.player2.strategy_type = (self.player2.strategy_type % 5) + 1
+
             state = State()
             self.env.state = state
             player = self.player1
@@ -34,6 +40,7 @@ class Tester:
                 self.env.switch_players()
                 self.env.roll_dice()
                 player = self.switch_players(player)
+                
             if self.env.end_of_game() == 1: white_win += 1
             elif self.env.end_of_game() == -1: black_win += 1
         print('finished testing:', black_win / games_num * 100,'%')

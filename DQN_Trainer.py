@@ -24,7 +24,7 @@ def main():
     Q_hat : DQN = Q.copy()
     Q_hat.train = False
     optim = torch.optim.Adam(Q.parameters(), lr = learning_rate)
-    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1500, gamma = 0.95)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1500, gamma = 0.975)
     
     start_epoch = 0
     losses, wins_per_100, avg_checkers_diffs = [], [], []
@@ -38,7 +38,7 @@ def main():
 
     # Load checkpoint if exists
     resume_wandb = False
-    run_id = '-advTest11'
+    run_id = '-advTest13'
     checkpoint_path = f'Data/Player1/checkpoint{run_id}.pth'
     buffer_path = f'Data/Player1/buffer{run_id}.pth'
     path = f'Data/Player1/Model{run_id}.pth'

@@ -270,17 +270,17 @@ class Environment:
         total -= self.total_distance(player) / (15 * 23)
 
         # Safety
-        total -= 0.5 * self.count_single_checkers(player)
+        total -= 0.8 * self.count_single_checkers(player)
         total += 0.5 * self.count_single_checkers(-player)
-        total += 0.2 * self.count_anchors(player)
-        total += 0.3 * self.count_primes(player)
+        total += 0.4 * self.count_anchors(player)
+        total += 0.5 * self.count_primes(player)
 
         # Bar
         total -= black_checkers_eaten
         total += white_checkers_eaten
 
         # Key points control
-        total += self.key_points_value(player)
+        total += 1.3 * self.key_points_value(player)
         total -= self.key_points_value(-player)
 
         return total

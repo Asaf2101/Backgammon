@@ -22,18 +22,18 @@ CHECKERS_BOXES_PADDING = 40
 input_size = 34
 layer1 = 128
 layer2 = 128
-layer3 = 64
+# layer3 = 64
 output_size = 1
 gamma = 0.95
 
 epsilon_start = 1
 epsilon_final = 0.01
-epsilon_decay = 1500
+epsilon_decay = 1200
 
-epochs = 10000
-C = 30
+epochs = 12000
+C = 10
 batch_size = 32
-learning_rate = 0.001
+learning_rate = 0.0005
 min_buffer = 4000
 
 if torch.cuda.is_available():
