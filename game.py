@@ -16,9 +16,9 @@ def create_agent(type, id, env : Environment, graphics : Graphics):
     elif type == 'Advanced Random Agent':
         return Advanced_Random_Agent(id, env, graphics)
     elif type == 'DQN Agent':
-        path = torch.load('Data/Player1/checkpoint-rndTest14.pth')
+        checkpoint = torch.load('Data/Player1/checkpoint-test5.pth') # test5 / rndTest14, change NN accordingly
         agent = DQN_Agent(id, env = env, train = False)
-        agent.DQN.load_state_dict(path['best_model_state_dict'])
+        agent.DQN.load_state_dict(checkpoint['best_model_state_dict'])
         return agent
     
 def start_menu():

@@ -21,7 +21,8 @@ CHECKERS_BOXES_PADDING = 40
 
 input_size = 34
 layer1 = 128
-layer2 = 128
+# layer2 = 128
+layer2 = 64
 layer3 = 64
 output_size = 1
 gamma = 0.95

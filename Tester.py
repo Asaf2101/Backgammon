@@ -8,14 +8,13 @@ from Diverse_Agent import Diverse_Agent
 import torch
 import random
 
-# path = 'Data/Player1/checkpoint-rndTest14.pth'
-# checkpoint = torch.load(path)
+# path = 'Data/Player1/Model-test5.pth'
+# checkpoint = torch.load('Data/Player1/checkpoint-test5.pth')
 # env = Environment()
 # player1 = DQN_Agent(1, env = env, train = False)
 # player1.DQN.load_state_dict(checkpoint['best_model_state_dict'])
 # print(checkpoint['best_win_precentage'])
 # player2 = Random_Agent(2, env = env, graphics = None)
-# player2 = Advanced_Random_Agent(2, env = env, graphics = None)
 
 class Tester:
     def __init__(self, env : Environment, player1, player2):
@@ -53,6 +52,6 @@ class Tester:
             return self.player1
 
 # tester = Tester(env = env, player1 = player1, player2 = player2)
-# games_num = 1000
+# games_num = 500
 # black_win, white_win = tester.test(games_num)
 # print('Black:', black_win, 'White:', white_win, '-->', black_win / games_num * 100,'%')
