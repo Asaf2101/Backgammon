@@ -24,7 +24,7 @@ def main():
     Q_hat : DQN = Q.copy()
     Q_hat.train = False
     optim = torch.optim.Adam(Q.parameters(), lr = learning_rate)
-    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1500, gamma = 0.975)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim, step_size = 1500, gamma = 0.95)
     
     start_epoch = 0
     losses, wins_per_100, avg_checkers_diffs = [], [], []
